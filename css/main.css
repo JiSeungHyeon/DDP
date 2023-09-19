@@ -1,0 +1,22 @@
+#wrap{
+  margin:auto;
+}
+.visual{
+  position:relative;
+  color:#FF8300;
+  font-size:48px;
+  margin:30px;
+  border-radius:15px;
+  font-family: 'Abril Fatface', cursive;
+}
+.visual span:not(:nth-of-type(1)){display:block;}
+.visual_img1{
+  position:absolute;
+  right:0;
+  height:80px;
+  width:200px;
+  object-fit:cover;
+  border:1px solid #FF8300;
+  border-radius:20px;
+}
+

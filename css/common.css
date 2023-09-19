@@ -1,0 +1,36 @@
+@charset "utf-8";
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+/* font-family: Pretendard, sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+/* font-family: 'Abril Fatface', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap');
+/* font-family: 'Cormorant', serif; */
+@font-face {
+  font-family: 'Cafe24ClassicType-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Cafe24ClassicType-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*, *:after, *:before{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+body{
+  font-family: Pretendard, sans-serif;
+  font-weight:700;
+  overflow-x:hidden;
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  -webkit-text-size-adjust:none;
+  background-color:#2E005D;
+}
+#wrap{
+  min-width:320px;
+  width:100%;
+  max-width:767px;
+}
