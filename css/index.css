@@ -199,9 +199,9 @@ body{background-color:transparent;}
   padding:30px;
   position:absolute;
   opacity:0;
-  top:6%;
+  top:6.5%;
   animation-name:tracking-in-expand;
-  animation-duration:1s;
+  animation-duration:1.3s;
   animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000);
   animation-fill-mode:forwards;
   animation-delay:9s;
