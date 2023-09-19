@@ -1,5 +1,7 @@
-window.addEventListener('load',function(){
-  this.setTimeout(scrollTo,0,0,1);
-},false);
-
-history.replaceState({}, null, location.pathname);
+if (navigator.userAgent.indexOf('iPhone')!= -1) {    
+  addEventListener("load", function() {        
+  setTimeout(hideURLbar, 0);}, false);
+  } else {     
+    hideURLbar();
+  }
+  function hideURLbar(){window.scrollTo(0, 1);}
