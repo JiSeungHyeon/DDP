@@ -1,11 +1,13 @@
 /* logo animation====================================== */
 #wrap{position:relative;}
 body{background-color:transparent;}
+
 @keyframes logo{
   from{opacity:1;}
   to{opacity:0;}
 }
 #visual_logo{
+  width:50%;
   position:absolute;
   top:50%;
   left:50%;
@@ -106,7 +108,7 @@ body{background-color:transparent;}
   animation-fill-mode:forwards;
 }
 
-/* video reveal================================= */
+/* gif reveal================================= */
 .pre_loader{
   position:absolute;
   top:50%;
@@ -178,7 +180,7 @@ body{background-color:transparent;}
   animation-delay:3s;
   animation-fill-mode:forwards;
 }
-#video_container video{width:100%;}
+#gif_container img{width:100%;}
 
 /* text reveal================= */
 @keyframes tracking-in-expand {
@@ -193,20 +195,20 @@ body{background-color:transparent;}
     opacity: 1;
   }
 }
-
 .visual_desc{
   width:100%;
   padding:30px;
   position:absolute;
   opacity:0;
-  top:6.5%;
+  top:5%;
   animation-name:tracking-in-expand;
   animation-duration:1.3s;
   animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000);
   animation-fill-mode:forwards;
-  animation-delay:9s;
-  color:#fff;
+  animation-delay:8s;
+  color:#6b3c28;
   text-align:center;
+  font-size:1rem;
 }
 
 
