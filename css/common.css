@@ -11,26 +11,40 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'JSongMyung-Regular-KO';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/JSongMyung-Regular-KO.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BookkMyungjo-Bd';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
 
 *, *:after, *:before{
   box-sizing:border-box;
   margin:0;
   padding:0;
+  overflow-x:hidden;
 }
 body{
   font-family: Pretendard, sans-serif;
   font-weight:700;
-  overflow-x:hidden;
   position:fixed;
   left:0;
   top:0;
   width:100%;
   height:100%;
   -webkit-text-size-adjust:none;
-  background-color:#2E005D;
+  background-color:#772f1a;
 }
 #wrap{
   min-width:320px;
   width:100%;
   max-width:767px;
 }
+a{text-decoration:none;}
+ul{list-style-type:none;}
