@@ -1,5 +1,6 @@
 #wrap{
   margin:auto;
+  padding-top:50px;
 }
 .visual{
   height:100vh;
@@ -7,7 +8,7 @@
   color:#FF8300;
   font-size:40px;
   font-size:2.5rem;
-  margin:30px;
+  margin:100px;
   margin:1.875rem;
   border-radius:15px;
   font-family: 'Abril Fatface', cursive;

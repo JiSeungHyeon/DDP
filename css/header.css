@@ -44,6 +44,7 @@ header{
   position:fixed;
   top:15px;
   left:15px;
+  z-index:100;
 }
 .back span{color:#FF6200;  overflow:hidden;}
 .trigger{
