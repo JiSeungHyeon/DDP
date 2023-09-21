@@ -28,6 +28,7 @@ body{
   height:100%;
   -webkit-text-size-adjust:none;
   background-color:#2E005D;
+  scroll-behavior:smooth;
 }
 #wrap{
   min-width:320px;
