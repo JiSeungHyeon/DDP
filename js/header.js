@@ -1,6 +1,4 @@
 /* tap bar & top button =================== */
-
-
 document.addEventListener('touchmove', function(){
   let tapBar = document.querySelector('#tap_bar');
   let top = document.querySelector('#top');
@@ -19,6 +17,7 @@ trigger.addEventListener('click', ()=>{
 });
 
 $(document).ready(function () {
+  $(".lnb").slideUp();
   $(".gnb li").click(function(){
     $(this).siblings().find(".lnb").slideUp(300);
     $(this).find(".lnb").stop().slideToggle(200);
