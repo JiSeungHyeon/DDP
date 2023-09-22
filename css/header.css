@@ -17,11 +17,11 @@
 }
 #tap_bar.active{bottom:0px;}
 #tap_bar a{
-  color:#FF6200;
+  color:#fff;
   transition:0.35s;
   font-size:24px;
 }
-#tap_bar a:hover{color:#2E005D;}
+#tap_bar a:hover{color:#585123;}
 
 /* top============================ */
 #top{

@@ -1,10 +1,28 @@
+history.replaceState({}, null, location.pathname);
+
 /* tap bar & top button =================== */
-document.addEventListener('touchmove', function(){
+let prevScrollTop = 0;
+let nowScrollTop = 0;
+
+function wheel(){
+  return prevScrollTop - nowScrollTop > 0 ? 'up' : 'down';
+};
+
+document.addEventListener('scroll', function(){
   let tapBar = document.querySelector('#tap_bar');
   let top = document.querySelector('#top');
 
+  nowScrollTop = $(this).scrollTop();
+
+if(wheel() == 'down'){
+  tapBar.classList.remove('active');
+  top.classList.remove('active');
+}
+if(wheel() == 'up'){
   tapBar.classList.add('active');
   top.classList.add('active');
+}
+prevScrollTop = nowScrollTop;
 });
 
 /* header============================= */
@@ -24,6 +42,7 @@ $(document).ready(function () {
   });
 
 });
+
 let back = document.querySelector('.back');
 
 back.addEventListener('click', ()=>{

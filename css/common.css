@@ -43,7 +43,7 @@ body{
   overflow-x:hidden;
 }
 #wrap{
-  min-width:280px;
+  min-width:320px;
   width:100%;
   max-width:767px;
 }
