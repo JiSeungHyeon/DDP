@@ -1,6 +1,5 @@
 @import url('common.css');
 
-main{position: relative;}
 
 .main-img{
   width: 100%;
@@ -16,33 +15,34 @@ main h1{
   width: 70%;
   left: 50%;
   bottom: 10px;
-  font-size: 1.35rem;
+  font-size: 4vw;
   color: #fff;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   transform: translateX(-50%);
+}
+main h1 .title-txt{
+  font-size: 5.5vw;
+  line-height: 2.5vh;
+  margin-bottom: 5px;
 }
 
 main p{
   position: relative;
   font-family: 'BookkMyungjo-Bd';
   color: #fff;
-  font-size: 0.75rem;
-  line-height: 150%;
-  width:60%;
-  height: 230px;
-  margin: 20px 0 0 20px;
+  font-size: 3.3vw;
+  line-height: 160%;
+  width:65%;
+  padding: 20px;
   z-index: 1;
 }
-main span{
+main .box{
   position: absolute;
   content: '';
-  left: 10px;
-  top: 10px;
-  width: 100%;
+  left: 25px;
+  top: 25px;
+  width: 80%;
   height: 90%;
   background-color: #F7B267;
   opacity: 0.25;
@@ -51,4 +51,236 @@ main span{
 
 .bast{
   margin-top: 50px;
+}
+
+.bast h2{
+  position: relative;
+  text-align: right;
+  font-size: 6.5vw;
+  color: #fff;
+  padding: 10px;
+  z-index: 1;
+
+}
+.bast h2::before{
+  position: absolute;
+  content: '';
+  top: 20px;
+  right: 20px;
+  width: 70%;
+  height: 40%;
+  background-color: #606C38;
+  z-index: -1;
+}
+
+.bast ul{
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  height: 34vh;
+}
+.bast ul li .tap{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 34vh;
+  overflow: hidden;
+}
+.bast ul li .tap::before{
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(20, 20, 20, 0) 10%,
+    rgba(20, 20, 20, 0.25) 25%,
+    rgba(20, 20, 20, 0.5) 50%,
+    rgba(20, 20, 20, 0.75) 75%,
+    rgba(20, 20, 20, 0.8) 100%
+);
+}
+
+.bast ul li a{
+  width: 70%;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.bast ul li .tap h3{
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  color: #fff;
+  font-size: 5.3vw;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3px;
+}
+.bast ul li .tap h3::before{
+  position: absolute;
+  content: '';
+  left: 50%;
+  bottom: 0%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 1px;
+  background-color: #fff;
+}
+
+.bast ul li .tap-sb{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 4vw;
+  font-weight: 300;
+  text-align: center;
+}
+
+.bast ul li .txt-box{
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  font-size: 3vw;
+  font-weight: 300;
+  text-align: center;
+  margin: auto;
+  z-index: 100;
+  padding: 15px;
+  color: #fff;
+}
+.bast ul li .txt-box::before{
+  position: absolute;
+  content: '';
+  width: 90%;
+  height: 80%;
+  top: 15px;
+  left: 20px;
+  background-color: #fff;
+  opacity: 0.15;
+}
+.bast ul li .txt-box::after{
+  position: absolute;
+  content: '';
+  width: 90%;
+  height:85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 0.5px solid #fff;
+}
+
+
+.box1{
+  background:url(../image/sub-teb-01.jpg) no-repeat center bottom;
+	background-size:cover;
+}
+.box2{
+  background:url(../image/sub-teb-02.jpg) no-repeat center bottom;
+	background-size:cover;
+}
+.box3{
+  background:url(../image/sub-teb-03.jpg) no-repeat center bottom;
+	background-size:cover;
+}
+.box4{
+  background:url(../image/sub-teb-04.jpg) no-repeat center bottom;
+	background-size:cover;
+}
+.box5{
+  background:url(../image/sub-teb-05.jpg) no-repeat center bottom;
+	background-size:cover;
+}
+.box6{
+  background:url(../image/sub-teb-06.jpg) no-repeat center bottom;
+	background-size:cover;
+}
+.box7{
+  background:url(../image/sub-teb-07.jpg) no-repeat center bottom;
+	background-size:cover;
+}
+
+.date{
+  width: 100%;
+  border: 1px solid #000;
+  margin-top: 50px;
+  margin: auto;
+}
+
+
+.date h5{
+  position: relative;
+  font-size: 7vw;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+}
+.date h5::before{
+  position: absolute;
+  content: '';
+  width: 35%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 0.5px solid #fff;
+}
+
+.circle{
+  display: block;
+  margin: 50px auto;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.date h4{
+  position: relative;
+  width: 100%;
+  font-size: 7vw;
+  margin: auto;
+  padding: 30px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.date h4::before{
+  position: absolute;
+  content: '';
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: thick double #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.date ul{
+  width: 100%;
+
+}
+.year{display: flex;}
+.year ul{
+  padding: 10px 0;
+}
+
+.year ul li{
+  width: 100%;
+  color: #fff;
+  font-weight: 200;
+  font-size: 3.5vw;
+  padding: 5px 0;
+}
+.date ul li:nth-child(even){
+  text-align: right;
 }
