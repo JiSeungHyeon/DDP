@@ -2,10 +2,10 @@
 
 /* tap bar====================== */
 #tap_bar{
-  height:50px;
+  height:7vh;
   width:100%;
   position:fixed;
-  bottom:-50px;
+  bottom:-7vh;
   left:0;
   backdrop-filter:blur(50px);
   -webkit-backdrop-filter:blur(50px);
@@ -17,22 +17,24 @@
 }
 #tap_bar.active{bottom:0px;}
 #tap_bar a{
-  color:#fff;
+  color:#585123;
   transition:0.35s;
-  font-size:24px;
+  font-size:5vw;
+  mix-blend-mode: difference;
 }
-#tap_bar a:hover{color:#585123;}
 
 /* top============================ */
 #top{
   position:fixed;
   bottom:100%;
   right:15px;
-  color:#FF6200;
   z-index:100;
 }
 #top.active{bottom:60px;}
-#top a{color:#FF6200;}
+#top a{
+  color:#585123;
+  font-size:6vw;
+}
 
 /* header======================= */
 header{
@@ -47,16 +49,17 @@ header{
   z-index:100;
 }
 .back span{
-  color:#FF6200;
+  font-size:8vw;
+  color:#fff;
   overflow:hidden;
 }
 .trigger{
   position:fixed;
   top:15px;
   right:15px;
-  width:30px;
-  height:30px;
-  background-color:#FF6200;
+  width:8vw;
+  height:8vw;
+  background-color:#fff;
   border-radius:50%;
   display:flex;
   justify-content:center;
@@ -65,8 +68,8 @@ header{
 }
 .trigger.active img{transform:rotate(-90deg);}
 .trigger img{
-  width:15px;
-  height:20px;
+  width:4vw;
+  height:5vw;
   transition:0.5s;
 }
 nav{
