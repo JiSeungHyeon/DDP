@@ -1,0 +1,19 @@
+@charset "utf-8";
+body{
+  background-color:#EEC170;
+}
+main{
+  padding-top:15vw;
+  width:100vw;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  word-break:break-all;
+}
+.service_img{
+  width:90vw;
+  transform:rotate(90deg);
+}
+.service_img img{
+  width:100vw;
+}

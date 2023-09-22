@@ -32,13 +32,10 @@ body{
   box-sizing:border-box;
   font-family: Pretendard, sans-serif;
   font-weight:700;
-  position:fixed;
-  left:0;
-  top:0;
   width:100%;
   height:100%;
   -webkit-text-size-adjust:none;
-  background-color:#2E005D;
+  background-color:#772F1A;
   scroll-behavior:smooth;
   overflow-x:hidden;
 }

@@ -1,3 +1,7 @@
+#tap_bar a{color:#E62F8B;}
+#top a{color:#E62F8B;}
+nav{background-color:#7BF3BB;}
+
 body{
   position:relative;
   background-color: transparent;
@@ -12,9 +16,11 @@ body:before{
   left:0;
   background:linear-gradient(rgba(36,255,152,1) 0%, rgba(255,255,255,0) 100%);
 }
+
+/* section====================== */
 section{
   padding-top:20vw;
-  width:100%;
+  width:100vw;
   text-align:center;
   overflow-x:hidden;
 }
@@ -62,9 +68,8 @@ dd{
   border-bottom:2px solid #060001
 }
 .seoul_design_info{
-  margin:6vh 0;
+  margin:10vh 0;
 }
 .seoul_design_info img{
   width:100vw;
-
 }
