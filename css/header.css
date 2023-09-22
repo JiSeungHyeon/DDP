@@ -26,9 +26,15 @@
 #top{
   position:fixed;
   bottom:-8vh;
-  right:15px;
+  right:6vw;
   z-index:100;
   transition:0.35s;
+  width:8vw;
+  height:8vw;
+  border-radius:50%;
+  backdrop-filter:blur(50px);
+  -webkit-backdrop-filter:blur(50px);
+  text-align:center;
 }
 #top.active{bottom:8vh;}
 #top a{
