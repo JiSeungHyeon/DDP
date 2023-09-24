@@ -14,13 +14,13 @@ document.addEventListener('scroll', function(){
 
   nowScrollTop = $(this).scrollTop();
 
-if(wheel() == 'down'){
-  tapBar.classList.remove('active');
-  top.classList.remove('active');
-}
-if(wheel() == 'up'){
-  tapBar.classList.add('active');
-  top.classList.add('active');
+  if(wheel() == 'down'){
+    tapBar.classList.remove('active');
+    top.classList.remove('active');
+  }
+  if(wheel() == 'up'){
+    tapBar.classList.add('active');
+    top.classList.add('active');
 }
 prevScrollTop = nowScrollTop;
 });
@@ -43,6 +43,7 @@ $(document).ready(function () {
 
 });
 
+/* back=============================== */
 let back = document.querySelector('.back');
 
 back.addEventListener('click', ()=>{

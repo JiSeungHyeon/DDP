@@ -1,7 +1,7 @@
-/* logo animation====================================== */
+*{overflow:hidden;}
 #wrap{position:relative;}
-body{background-color:transparent;}
 
+/* logo animation====================================== */
 @keyframes logo{
   from{opacity:1;}
   to{opacity:0;}
@@ -196,19 +196,21 @@ body{background-color:transparent;}
   }
 }
 .visual_desc{
-  width:100vw;
+  width:100%;
   padding:30px;
   position:absolute;
   opacity:0;
   top:5%;
+  left:50%;
+  transform:translateX(-50%);
   animation-name:tracking-in-expand;
   animation-duration:1.3s;
   animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000);
   animation-fill-mode:forwards;
   animation-delay:8s;
   color:#6b3c28;
+  font-size:4vw;
   text-align:center;
-  font-size:1rem;
 }
 
 

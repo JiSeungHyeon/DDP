@@ -1,17 +1,24 @@
+#tap_bar a{color:#EEC170;}
+#top a{color:#772F1A;}
+#top{background-color:rgba(238,193,112,0.2);}
+.back span{color:#EEC170}
+.trigger{background-color:#EEC170;}
+
 #wrap{
   margin:auto;
   padding-top:50px;
 }
+body{background-color:#772F1A;}
 .visual{
   height:100vh;
   position:relative;
-  color:#FF8300;
+  color:#EEC170;
   font-size:40px;
   font-size:2.5rem;
   margin:100px;
   margin:1.875rem;
   font-family: 'Abril Fatface', cursive;
-  overflow-y:hidden;;
+  overflow:hidden;
 }
 .visual span:nth-of-type(1){
   position:relative;
@@ -25,7 +32,7 @@
   width:150px;
   width:9.375rem;
   object-fit:cover;
-  border:1px solid #FF8300;
+  border:1px solid #EEC170;
   border-radius:15px;
   border-radius:0.938rem;
 }
@@ -36,20 +43,21 @@
   padding-top:1rem;
 }
 .visual span:nth-of-type(2):before{
-  width:100%;
+  width:100vw;
   position:absolute;
   content:'';
   height:1px;
-  background-color:#FF8300;
-  right:40%;
-  top:50%;
+  background-color:#EEC170;
+  right:45%;
+  top:55%;
+  transform:translateY(-50%);
 }
 .visual span:nth-of-type(3){
   position:absolute;
   top:30vw;
   left:0;
   z-index:1;
-  background-color:#2E005D;
+  background-color:#772F1A;
   border-radius:0 0 20px 0;
   display:inline-block;
   padding:10px;

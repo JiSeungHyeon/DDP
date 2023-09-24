@@ -35,7 +35,6 @@ body{
   width:100vw;
   height:100vh;
   -webkit-text-size-adjust:none;
-  background-color:#772F1A;
   scroll-behavior:smooth;
   overflow-x:hidden;
 }
