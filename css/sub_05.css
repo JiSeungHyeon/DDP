@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+@charset "utf-8";
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+/* font-family: Pretendard, sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+/* font-family: 'Abril Fatface', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap');
+/* font-family: 'Cormorant', serif; */
+@font-face {
+  font-family: 'Cafe24ClassicType-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Cafe24ClassicType-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LOTTERIACHAB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIACHAB.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'KBO-Dia-Gothic_bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+*, *:after, *:before{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+body{
+  font-family: Pretendard, sans-serif;
+  font-weight:700;
+  overflow:hidden;
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  -webkit-text-size-adjust:none;
+}
+#wrap{
+  min-width:320px;
+  width:100%;
+  max-width:767px;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #FFEA3F;
+}
+.text{
+  display: flex;
+  width: 100vw;
+  height: 50vh;
+}
+.left ul:first-child{
+  border: 1px solid #000;
+  width: 50vw;
+  height: 15vh;
+  text-transform: uppercase;
+}
+.left ul:nth-child(2){
+  border: 1px solid #000;
+  width: 50vw;
+  height: 10vh;
+  font-family: 'KBO-Dia-Gothic_bold';
+  text-transform: uppercase;
+  padding: 1rem 0;
+  overflow: hidden;
+}
+.left ul:nth-child(3){
+  padding-top: 5vh;
+  border: 1px solid #000;
+  width: 50vw;
+  height: 25vh;
+  font-family: 'LOTTERIACHAB';
+  font-size: 2rem;
+  overflow: hidden;
+}
+.right ul:first-child{
+  border: 1px solid #000;
+  width: 50vw;
+  height: 25vh;
+  text-transform: uppercase;
+  text-align: right;
+  list-style-type: none;
+}
+.right ul:nth-child(2){
+  border: 1px solid #000;
+  width: 50vw;
+  height: 10vh;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  overflow: hidden;
+  text-align: right;
+  font-size: 0.8rem;
+}
+.right ul:nth-child(3){
+  padding-bottom: 5vh;
+  border: 1px solid #000;
+  width: 50vw;
+  height: 15vh;
+  font-size: 1.2rem;
+  overflow: hidden;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+address{
+  text-align: left;
+  font-size: 0.8rem;
+  padding: 5% 0 0 5%;
+  margin: 10%;
+}
+footer p{
+  font-style: normal;
+}
