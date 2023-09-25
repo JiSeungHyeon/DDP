@@ -1,11 +1,11 @@
 @import url(common.css);
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
 
-footer{  
+/* footer{  
   background-color: black; 
   width: 100vw;
   height: 100vh;
-}
+} */
 footer ul{
   display: flex;
   text-align: center;

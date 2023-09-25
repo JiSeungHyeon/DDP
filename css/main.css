@@ -120,7 +120,7 @@
 .accordion .title{
   background-color: #FEFAE0;
   width: 90vw;
-  height: 5vh;
+  height: 6.5vh;
   margin-bottom: 7px;
   font-family: Pretendard, sans-serif;
 }
@@ -140,18 +140,18 @@
   height: 100%;
   top: 15%;
   left: 2%;
-  background: url(../image/ques.png)no-repeat;
+  background: url(../image/ques.svg)no-repeat;
 }
 .accordion .title:after {
   position: absolute;
-  content: '\e5cf';
+  content: '\e5ce';
   font-family: 'Material Icons Outlined';
   top: -10%;
   left: 75%;
   margin-top: 5px;
   transition: 0.35s;
 }
-.accordion .title.active:after {transform: rotate(0deg);}
+.accordion .title.active:after {content: '\e5cf';}
 .accordion .title.active {
   background-color: #FEFAE0;
 }
@@ -161,12 +161,11 @@
 .accordion .content.active{
   font-size: 1rem;
   line-height: 1.5rem;
-  padding-top: 0.6rem;
-  padding-left: 3.5rem;
   border-radius: 0 0 30px 30px;
   background-color: #FEFAE0;
-  width: 90vw;
-  height: 5.5rem;
+  width: 70vw;
+  height: 6vh;
+  padding: 4vh;
   margin-bottom: 7px;
   font-family: Pretendard, sans-serif;
 } 
