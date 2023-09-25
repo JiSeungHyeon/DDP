@@ -94,7 +94,7 @@ figure:nth-of-type(6):before{
 }
 figure:nth-of-type(7){transform:rotateY(315deg) translateZ(-450px);}
 figure:nth-of-type(7):before{
-  content:'에어비앤비와 함께하는 ‘DDP에서 특별한 하룻밤’ 이벤트';
+  content:'8월호 DDP 월간소식지 이벤트 당첨내역';
   position:absolute;
   top:120%;
   color:#D6D6D6;
@@ -103,7 +103,7 @@ figure:nth-of-type(7):before{
 }
 figure:nth-of-type(8){transform:rotateY(360deg) translateZ(-450px);}
 figure:nth-of-type(8):before{
-  content:'에어비앤비와 함께하는 ‘DDP에서 특별한 하룻밤’ 이벤트';
+  content:'DDP 장미정원 현장이벤트!';
   position:absolute;
   top:120%;
   color:#D6D6D6;
