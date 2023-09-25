@@ -16,8 +16,12 @@ section{
   perspective:1700px;
   position:relative;
   height:90vh;
+  overflow-x:hidden;
 }
-section h1{text-align:center;}
+section h1{
+  color:#D6D6D6;
+  text-align:center;
+}
 @keyframes ani {
   0% {
   transform:rotateY(0);
@@ -42,7 +46,7 @@ section h1{text-align:center;}
 }
 .event figure:before{
   position:absolute;
-  width:100%;
+  width:80%;
   top:120%;
   color:#D6D6D6;
   font-weight:500;

@@ -1,18 +1,21 @@
-#tap_bar a{color:#EEC170;}
-#top a{color:#772F1A;}
-#top{background-color:rgba(238,193,112,0.2);}
-.back span{color:#EEC170}
-.trigger{background-color:#EEC170;}
+#tap_bar a{color:#202020;}
+#top a{color:#202020;}
+#top{background-color:#fff;}
+.back span{color:#D6D6D6}
+.trigger{background-color:#D6D6D6;}
+nav{background-color:#333533;}
+nav li{color:#fff;}
+nav a{color:#fff;}
 
 #wrap{
   margin:auto;
   padding-top:50px;
 }
-body{background-color:#772F1A;}
+body{background-color:#202020;}
 .visual{
   height:100vh;
   position:relative;
-  color:#EEC170;
+  color:#D6D6D6;
   font-size:40px;
   font-size:2.5rem;
   margin:100px;
@@ -32,7 +35,7 @@ body{background-color:#772F1A;}
   width:150px;
   width:9.375rem;
   object-fit:cover;
-  border:1px solid #EEC170;
+  border:1px solid #D6D6D6;
   border-radius:15px;
   border-radius:0.938rem;
 }
@@ -47,7 +50,7 @@ body{background-color:#772F1A;}
   position:absolute;
   content:'';
   height:1px;
-  background-color:#EEC170;
+  background-color:#D6D6D6;
   right:45%;
   top:55%;
   transform:translateY(-50%);
@@ -57,7 +60,7 @@ body{background-color:#772F1A;}
   top:30vw;
   left:0;
   z-index:1;
-  background-color:#772F1A;
+  background-color:#202020;
   border-radius:0 0 20px 0;
   display:inline-block;
   padding:10px;
@@ -67,4 +70,37 @@ body{background-color:#772F1A;}
   position:absolute;
   top:40vw;
   left:0;
+}
+.visual_more{
+  position:absolute;
+  font-family: 'BookkMyungjo-Bd';
+  bottom:48vw;
+  font-size:5vw;
+  right:0;
+}
+.visual_more span{
+  position:absolute;
+  right:0;
+  background-color:#FFD100;
+  color:#202020;
+  width:40vw;
+  padding:5vw;
+  display:inline-block;
+  border-radius:50vw 0 0 50vw;
+}
+.visual_more a{
+  position:absolute;
+  z-index:2;
+  background-color:#202020;
+  color:#D6D6D6;
+  right:1vw;
+  padding:1vw;
+  height:20vw;
+  text-transform:capitalize;
+  top:8vw;
+  font-size:4vw;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:4vw 0 4vw 0;
 }
