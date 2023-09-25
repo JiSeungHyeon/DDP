@@ -16,11 +16,16 @@ section{
   perspective:1700px;
   position:relative;
   height:90vh;
-
 }
-section h1{
-  text-align:center;
-}
+section h1{text-align:center;}
+@keyframes ani {
+  0% {
+  transform:rotateY(0);
+  }
+  100% {
+  transform:rotateY(360deg);
+  }
+  }
 .event{
   width:inherit;
   display:flex;
@@ -32,90 +37,50 @@ section h1{
 .event figure{
   position:absolute;
   top:40vw;
-  margin:0 1vw;
+  margin:0 3vw;
   backface-visibility:hidden;
 }
-.event figure img{
-  width:100vw;
+.event figure:before{
+  position:absolute;
+  width:100%;
+  top:120%;
+  color:#D6D6D6;
+  font-weight:500;
+  left:50%;
+  transform:translateX(-50%);
+  text-align:center;
+  font-size:6vw;
 }
-figure:nth-of-type(1){transform:rotateY(45deg) translateZ(-450px);}
+.event figure img{width:100vw;}
+figure:nth-of-type(1){transform:rotateY(45deg) translateZ(-500px);}
 figure:nth-of-type(1):before{
   content:'에어비앤비와 함께하는 ‘DDP에서 특별한 하룻밤’ 이벤트';
-  position:absolute;
-  top:120%;
-  color:#D6D6D6;
-  font-weight:500;
-  text-align:center;
 }
-figure:nth-of-type(2){transform:rotateY(90deg) translateZ(-450px);}
+figure:nth-of-type(2){transform:rotateY(90deg) translateZ(-500px);}
 figure:nth-of-type(2):before{
   content:'온라인몰 가입하고 리뷰 작성하자!';
-  position:absolute;
-  top:120%;
-  color:#D6D6D6;
-  font-weight:500;
-  text-align:center;
 }
-figure:nth-of-type(3){transform:rotateY(135deg) translateZ(-450px);}
+figure:nth-of-type(3){transform:rotateY(135deg) translateZ(-500px);}
 figure:nth-of-type(3):before{
   content:'DDP에서 준비하는 새학기, 새집 단장 프로젝트';
-  position:absolute;
-  top:120%;
-  color:#D6D6D6;
-  font-weight:500;
-  text-align:center;
 }
-figure:nth-of-type(4){transform:rotateY(180deg) translateZ(-450px);}
+figure:nth-of-type(4){transform:rotateY(180deg) translateZ(-500px);}
 figure:nth-of-type(4):before{
   content:'2020 서울라이트 희망메시지 시민 공모';
-  position:absolute;
-  top:120%;
-  color:#D6D6D6;
-  font-weight:500;
-  text-align:center;
 }
-figure:nth-of-type(5){transform:rotateY(225deg) translateZ(-450px);}
+figure:nth-of-type(5){transform:rotateY(225deg) translateZ(-500px);}
 figure:nth-of-type(5):before{
   content:'2020 DDP라이트ON 시민참여공모이벤트';
-  position:absolute;
-  top:120%;
-  color:#D6D6D6;
-  font-weight:500;
-  text-align:center;
 }
-figure:nth-of-type(6){transform:rotateY(270deg) translateZ(-450px);}
+figure:nth-of-type(6){transform:rotateY(270deg) translateZ(-500px);}
 figure:nth-of-type(6):before{
   content:'DDP 복날 이벤트';
-  position:absolute;
-  top:120%;
-  color:#D6D6D6;
-  font-weight:500;
-  text-align:center;
 }
-figure:nth-of-type(7){transform:rotateY(315deg) translateZ(-450px);}
+figure:nth-of-type(7){transform:rotateY(315deg) translateZ(-500px);}
 figure:nth-of-type(7):before{
   content:'8월호 DDP 월간소식지 이벤트 당첨내역';
-  position:absolute;
-  top:120%;
-  color:#D6D6D6;
-  font-weight:500;
-  text-align:center;
 }
-figure:nth-of-type(8){transform:rotateY(360deg) translateZ(-450px);}
+figure:nth-of-type(8){transform:rotateY(360deg) translateZ(-500px);}
 figure:nth-of-type(8):before{
   content:'DDP 장미정원 현장이벤트!';
-  position:absolute;
-  top:120%;
-  color:#D6D6D6;
-  font-weight:500;
-  text-align:center;
 }
-
-@keyframes ani {
-  0% {
-  transform:rotateY(0);
-  }
-  100% {
-  transform:rotateY(360deg);
-  }
-  }
