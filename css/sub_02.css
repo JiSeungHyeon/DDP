@@ -8,13 +8,15 @@
   margin:auto;
   padding-top:50px;
 }
-body{background-color:#772F1A;}
+body{background-color:#202020;}
 
 /* event=================== */
 section{
   width:100vw;
-  perspective:400px;
+  perspective:1700px;
   position:relative;
+  height:90vh;
+
 }
 section h1{
   text-align:center;
@@ -24,22 +26,90 @@ section h1{
   display:flex;
   justify-content:center;
   align-items:center;
-  animation: ani linear 30s infinite;
+  transform-style:preserve-3d;
+  animation:ani linear 60s infinite;
 }
 .event figure{
   position:absolute;
-  top:50vw;
-  margin:0 2vw;
-  transform: rotateY(0deg) translateZ(-764px);
+  top:40vw;
+  margin:0 1vw;
+  backface-visibility:hidden;
 }
-figure:nth-of-type(1){transform:rotateY(45deg);}
-figure:nth-of-type(2){transform:rotateY(90deg);}
-figure:nth-of-type(3){transform:rotateY(135deg);}
-figure:nth-of-type(4){transform:rotateY(180deg);}
-figure:nth-of-type(5){transform:rotateY(225deg);}
-figure:nth-of-type(6){transform:rotateY(270deg);}
-figure:nth-of-type(7){transform:rotateY(315deg);}
-figure:nth-of-type(8){transform:rotateY(360deg);}
+.event figure img{
+  width:100vw;
+}
+figure:nth-of-type(1){transform:rotateY(45deg) translateZ(-450px);}
+figure:nth-of-type(1):before{
+  content:'에어비앤비와 함께하는 ‘DDP에서 특별한 하룻밤’ 이벤트';
+  position:absolute;
+  top:120%;
+  color:#D6D6D6;
+  font-weight:500;
+  text-align:center;
+}
+figure:nth-of-type(2){transform:rotateY(90deg) translateZ(-450px);}
+figure:nth-of-type(2):before{
+  content:'에어비앤비와 함께하는 ‘DDP에서 특별한 하룻밤’ 이벤트';
+  position:absolute;
+  top:120%;
+  color:#D6D6D6;
+  font-weight:500;
+  text-align:center;
+}
+figure:nth-of-type(3){transform:rotateY(135deg) translateZ(-450px);}
+figure:nth-of-type(3):before{
+  content:'에어비앤비와 함께하는 ‘DDP에서 특별한 하룻밤’ 이벤트';
+  position:absolute;
+  top:120%;
+  color:#D6D6D6;
+  font-weight:500;
+  text-align:center;
+}
+figure:nth-of-type(4){transform:rotateY(180deg) translateZ(-450px);}
+figure:nth-of-type(4):before{
+  content:'에어비앤비와 함께하는 ‘DDP에서 특별한 하룻밤’ 이벤트';
+  position:absolute;
+  top:120%;
+  color:#D6D6D6;
+  font-weight:500;
+  text-align:center;
+}
+figure:nth-of-type(5){transform:rotateY(225deg) translateZ(-450px);}
+figure:nth-of-type(5):before{
+  content:'에어비앤비와 함께하는 ‘DDP에서 특별한 하룻밤’ 이벤트';
+  position:absolute;
+  top:120%;
+  color:#D6D6D6;
+  font-weight:500;
+  text-align:center;
+}
+figure:nth-of-type(6){transform:rotateY(270deg) translateZ(-450px);}
+figure:nth-of-type(6):before{
+  content:'에어비앤비와 함께하는 ‘DDP에서 특별한 하룻밤’ 이벤트';
+  position:absolute;
+  top:120%;
+  color:#D6D6D6;
+  font-weight:500;
+  text-align:center;
+}
+figure:nth-of-type(7){transform:rotateY(315deg) translateZ(-450px);}
+figure:nth-of-type(7):before{
+  content:'에어비앤비와 함께하는 ‘DDP에서 특별한 하룻밤’ 이벤트';
+  position:absolute;
+  top:120%;
+  color:#D6D6D6;
+  font-weight:500;
+  text-align:center;
+}
+figure:nth-of-type(8){transform:rotateY(360deg) translateZ(-450px);}
+figure:nth-of-type(8):before{
+  content:'에어비앤비와 함께하는 ‘DDP에서 특별한 하룻밤’ 이벤트';
+  position:absolute;
+  top:120%;
+  color:#D6D6D6;
+  font-weight:500;
+  text-align:center;
+}
 
 @keyframes ani {
   0% {
