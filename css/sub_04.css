@@ -60,7 +60,7 @@ body{
   z-index: -1;
 }
 .content{
-  margin: 2.5rem 0;
+  margin: 7vh 0;
   font-size: 1.2rem;
   line-height: 1.6rem;
 }
@@ -78,7 +78,7 @@ body{
   left: 0;
   width: inherit;
   height: 30vh;
-  background: url(../image/Rectangle\ 63.png)no-repeat;
+  background: url(../image/Rectangle\ 63.svg)no-repeat;
   z-index: -1;
 }
 .two{
@@ -94,18 +94,18 @@ body{
   content: '';
   position: absolute;
   top: 0vh;
-  left: 20vw;
+  left: 25vw;
   width: 90vw;
-  height: 8vh;
-  background: url(../image/Rectangle\ 64.png)no-repeat;
+  height: 10vh;
+  background: url(../image/Rectangle\ 64.svg)no-repeat;
   z-index: -1;
 }
 .three{
   width: 100vw;
-  height: 5vh;
+  height: 2vh;
   position: relative;
   z-index: 10;
-  padding: 0.5rem;
+  padding: 0.5vw;
 }
 .three::before{
   content: '';
@@ -113,8 +113,8 @@ body{
   top: 0;
   left: 0;
   width: inherit;
-  height: 7vh;
-  background: url(../image/Rectangle\ 65.png)no-repeat;
+  height: 20vh;
+  background: url(../image/Rectangle\ 65.svg)no-repeat;
   z-index: -1;
 }
 .four{
@@ -124,22 +124,22 @@ body{
   top: 0;
   left: 0;
   z-index: 10;
-  padding: 0.4rem;
+  padding: 1vh;
   text-align: right;
 }
 .four::before{
   content: '';
   position: absolute;
   top: 0;
-  left: 40vw;
-  width: inherit;
-  height: 8vh;
-  background: url(../image/Rectangle\ 66.png)no-repeat;
+  left: 42vw;
+  width: 100vw;
+  height: 10vh;
+  background: url(../image/Rectangle\ 66.svg)no-repeat;
   z-index: -1;
 }
 .five{
   width: 100vw;
-  height: 5vh;
+  height: 3vh;
   position: relative;
   z-index: 10;
   padding: 0.3rem;
@@ -152,12 +152,22 @@ body{
   left: 0;
   width: inherit;
   height: 6vh;
-  background: url(../image/Rectangle\ 67.png)no-repeat;
+  background: url(../image/Rectangle\ 67.svg)no-repeat;
+  z-index: -1;
+}
+.five::after{
+  content: '';
+  position: absolute;
+  top: 10vh;
+  left: 0vh;
+  width: inherit;
+  height: 6vh;
+  background: url(../image/Polygon\ 2.svg)no-repeat;
   z-index: -1;
 }
 .six{
   width: 100vw;
-  height: 5vh;
+  height: 3vh;
   position: relative;
   z-index: 10;
   text-align: right;
@@ -167,10 +177,10 @@ body{
   content: '';
   position: absolute;
   top: 0;
-  left: 35vw;
+  left: 40vw;
   width: inherit;
   height: 8vh;
-  background: url(../image/Rectangle\ 68.png)no-repeat;
+  background: url(../image/Rectangle\ 68.svg)no-repeat;
   z-index: -1;
 }
 .seven{
@@ -186,8 +196,8 @@ body{
   top: 0;
   left: 0;
   width: inherit;
-  height: inherit;
-  background: url(../image/Rectangle\ 69.png)no-repeat;
+  height: 10vh;
+  background: url(../image/Rectangle\ 69.svg)no-repeat;
   z-index: -1;
 }
 address{
