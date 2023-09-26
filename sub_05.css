@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+@charset "utf-8";
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+/* font-family: Pretendard, sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+/* font-family: 'Abril Fatface', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap');
+/* font-family: 'Cormorant', serif; */
+@font-face {
+  font-family: 'Cafe24ClassicType-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Cafe24ClassicType-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LOTTERIACHAB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIACHAB.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'KBO-Dia-Gothic_bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+*, *:after, *:before{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+body{
+  font-family: Pretendard, sans-serif;
+  font-weight:700;
+  overflow:hidden;
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  -webkit-text-size-adjust:none;
+}
+#wrap{
+  min-width:320px;
+  width:100%;
+  max-width:767px;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #FFEA3F;
+}
+#fair{
+  padding-top: 7vh;
+  background: url(../image/bgbox.png) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+@keyframes dash-ani{
+  from { stroke-dashoffset: 2931;}
+  to { stroke-dashoffset: 0;}
+}
+.cls-1{
+  fill:transparent;
+  stroke:#e52f8c;
+  stroke-linecap:round;
+  stroke-miterlimit:10;
+  stroke-width:15px;
+  stroke-dasharray: 2931;
+  stroke-dashoffset: 0;
+  animation: dash-ani 5s;
+  position: relative;
+}
+.text{
+  position: absolute;
+  display: flex;
+  width: 100vw;
+  height: 50vh;
+}
+.left{padding: 1vw;}
+.left ul:first-child{
+  /* border: 1px solid #000; */
+  list-style-type: none;
+  width: 50vw;
+  height: 15vh;
+  text-transform: uppercase;
+  position: relative;
+}
+.left ul:first-child li:last-child{
+  width: 10vw;
+  position: absolute;
+  top: 0;
+  left: 15vw;
+  animation: star 1.5s infinite;
+}
+.left ul:nth-child(2){
+  /* border: 1px solid #000; */
+  width: 50vw;
+  height: 10vh;
+  font-family: 'KBO-Dia-Gothic_bold';
+  text-transform: uppercase;
+  padding: 1rem 0;
+  overflow: hidden;
+}
+.left ul:nth-child(3){
+  /* border: 1px solid #000; */
+  width: 50vw;
+  height: 25vh;
+  height: auto;
+  font-family: 'LOTTERIACHAB';
+  font-size: 2rem;
+  padding-top: 3vh;
+}
+.left ul:nth-child(3):before{
+  position: absolute;
+  content: '';
+  top: 20vh;
+  left: 30vw;
+  width: 20vw;
+  height: 20vh;
+  background: url(../image/Asset\ 1.png) no-repeat;
+  animation: star 1.5s infinite;
+}
+@keyframes star{
+  0%{transform: scale(1.1);}
+  50%{transform: scale(1.2);}
+  100%{transform: scale(1.1);}
+}
+.right ul{padding-right: 3vw;
+padding-top:3vw;}
+.right ul:first-child{
+  /* border: 1px solid #000; */
+  width: 50vw;
+  height: 20vh;
+  text-transform: uppercase;
+  text-align: right;
+  list-style-type: none;
+}
+.right ul:first-child li:nth-child(2){
+  padding: 5vw 15vw 0 0;
+  animation: star 1.5s infinite;
+}
+.right ul:nth-child(2){
+  list-style-type: none;
+  /* border: 1px solid #000; */
+  width: 50vw;
+  height: 10vh;
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 0.8rem;
+  position: relative;
+}
+.right ul:nth-child(2):before{
+  position: absolute;
+  content: '';
+  top: 15vh;
+  left: 10vw;
+  width: 20vw;
+  height: 20vh;
+  background: url(../image/Asset\ 1.png) no-repeat;
+  background-size: 50%;
+  animation: star 1.5s infinite;
+}
+.right ul:nth-child(3){
+  list-style-type: none;
+  padding-bottom: 5vh;
+  /* border: 1px solid #000; */
+  width: 50vw;
+  height: 15vh;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: right;
+}
+.right ul:last-child li:last-child{
+  width: 5vw;
+  margin-right: 15vw;
+  animation: star 1.5s infinite;
+}
+
+address{
+  text-align: left;
+  font-size: 0.8rem;
+  padding: 5% 0 0 5%;
+  margin: 10%;
+}
+footer p{
+  font-style: normal;
+}
