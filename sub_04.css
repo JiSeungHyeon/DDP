@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+@charset "utf-8";
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+/* font-family: Pretendard, sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+/* font-family: 'Abril Fatface', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap');
+/* font-family: 'Cormorant', serif; */
+@font-face {
+  font-family: 'Cafe24ClassicType-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Cafe24ClassicType-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*, *:after, *:before{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+body{
+  font-family: Pretendard, sans-serif;
+  font-weight:700;
+  overflow:hidden;
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  -webkit-text-size-adjust:none;
+}
+#wrap{
+  min-width:320px;
+  width:100%;
+  max-width:767px;
+  height: 100vh;
+  background-color: #007AEB;
+  overflow-y: scroll;
+}
+.poster img{
+  margin-top: 3rem;
+  width: 100vw;
+  height: 35vh;
+}
+.ftitle{
+  margin-bottom: 10%;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
+.ftitle:before{
+  content: '';
+  position: absolute;
+  top: 1vh;
+  left: 15vw;
+  width: 70vw;
+  height: 3vh;
+  background-color: #004788;
+  z-index: -1;
+}
+.content{
+  margin: 7vh 0;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+.one{
+  width: 100vw;
+  height: 5vh;
+  position: relative;
+  padding: 0.3rem;
+  z-index: 10;
+}
+.one::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: 30vh;
+  background: url(../image/Rectangle\ 63.svg)no-repeat;
+  z-index: -1;
+}
+.two{
+  width: 100vw;
+  height: 7vh;
+  position: relative;
+  top: 0vh;
+  left: -5vw;
+  z-index: 10;
+  text-align: right;
+}
+.two::before{
+  content: '';
+  position: absolute;
+  top: 0vh;
+  left: 25vw;
+  width: 90vw;
+  height: 10vh;
+  background: url(../image/Rectangle\ 64.svg)no-repeat;
+  z-index: -1;
+}
+.three{
+  width: 100vw;
+  height: 2vh;
+  position: relative;
+  z-index: 10;
+  padding: 0.5vw;
+}
+.three::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: 20vh;
+  background: url(../image/Rectangle\ 65.svg)no-repeat;
+  z-index: -1;
+}
+.four{
+  width: 100vw;
+  height: 5vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 1vh;
+  text-align: right;
+}
+.four::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 42vw;
+  width: 100vw;
+  height: 10vh;
+  background: url(../image/Rectangle\ 66.svg)no-repeat;
+  z-index: -1;
+}
+.five{
+  width: 100vw;
+  height: 3vh;
+  position: relative;
+  z-index: 10;
+  padding: 0.3rem;
+  line-height: 1.5rem;
+}
+.five::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: 6vh;
+  background: url(../image/Rectangle\ 67.svg)no-repeat;
+  z-index: -1;
+}
+.five::after{
+  content: '';
+  position: absolute;
+  top: 10vh;
+  left: 0vh;
+  width: inherit;
+  height: 6vh;
+  background: url(../image/Polygon\ 2.svg)no-repeat;
+  z-index: -1;
+}
+.six{
+  width: 100vw;
+  height: 3vh;
+  position: relative;
+  z-index: 10;
+  text-align: right;
+  padding: 0.8rem;
+}
+.six::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 40vw;
+  width: inherit;
+  height: 8vh;
+  background: url(../image/Rectangle\ 68.svg)no-repeat;
+  z-index: -1;
+}
+.seven{
+  width: 100vw;
+  height: 5vh;
+  position: relative;
+  z-index: 10;
+  padding: 0.8rem;
+}
+.seven::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: 10vh;
+  background: url(../image/Rectangle\ 69.svg)no-repeat;
+  z-index: -1;
+}
+address{
+  text-align: left;
+  position: relative;
+  font-size: 0.8rem;
+  padding: 5% 0 0 5%;
+  color: rgb(0, 0, 138);
+  margin: 10%;
+}
+address::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80vw;
+  height: 80vh;
+  background: url(../image/footrect.png)no-repeat;
+}
+footer p{
+  font-style: normal;
+}
