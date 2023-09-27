@@ -103,17 +103,166 @@ body{background-color:#202020;}
   border-radius:4vw 0 4vw 0;
 }
 
-/* section 1 ================== */
-#wrap{
+/* section 1 =================== */
+a{color: #202020;}
+.sc1{
+  width: 100%;
+  margin: 50px auto;
+}
+
+.box01 h3{
+  text-align: center;
+  font-size: 7vw;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.sc2-box{
+  width: 60%;
+}
+
+.sc2-box a{
+  position: relative;
+  margin: 10% 5% 0;
+}
+
+.sc2-box img{
+  margin: 0;
+  width: 100%;
+}
+
+.sc2-box02{
+  text-align: right;
+}
+
+.sc2-box01 img{border-radius: 0 50% 0 0;}
+.sc2-box02 img{border-radius: 50% 0 0 0;}
+
+.sc2-box .img02{
+  position: absolute;
+  bottom: 1%;
+  left: 3%;
+  opacity: 0.5;
+  z-index: -1;
+  width: 100%;
+}
+
+.p-title{
+  position: relative;
+  color: #202020;
+  font-weight: 700;
+  font-size: 5vw;
+  text-align: center;
+  width: 80%;
+}
+.sc2-box01 .p-title{background-color: #D6D6D6;}
+.sc2-box02 .p-title{background-color: #FFD100;}
+
+.p-title .p-kind{
+  position: absolute;
+  top: 0;
+  right: 100%;
+  display: inline-block;
+}
+.sc2-box02 .p-kind{background-color: #D6D6D6;}
+.sc2-box01 .p-kind{background-color: #FFD100;}
+
+.box02{
+  width: 100%;
+  margin-top: 150px;
+}
+
+.box02 h3{
+  display: inline-block;
+  padding: 2%;
+  letter-spacing : 1vw;
+  color: #202020;
+  font-size: 12vw;
+  background-color: #FFD100;
+}
+.box02 h3 span{
+  font-weight: 900;
+}
+
+.box02 .img-box{
+  width: 100%;
+  line-height: 0;
+}
+
+.box02 .img-box div{
+  display: inline-block;
+  border: 2vw solid #D6D6D6;
+  box-sizing: border-box;
+}
+
+.img-box{
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr); /* 5개씩 정렬 */
+  margin: auto;
+}
+
+.grid{
+  height: 20vh;
+  overflow: hidden;
+  text-align: right;
+  float: right;
+}
+
+.grid img{
+  height: 100%;
+}
+
+.img-box .grid:nth-child(1){
+  grid-area: span 1/span 2;
+  background:url(../image/sub-dp-05.jpg) no-repeat center bottom;
+  background-size:cover;
+  float: right;
+}
+.img-box .grid:nth-child(2){
+  grid-area: span 1/span 3;
+  background:url(../image/sub-dp-04.jpg) no-repeat center bottom;
+  background-size:cover;
+  float: right;
+}
+.img-box .grid:nth-child(3){
+  grid-area: span 2/span 2;
+  height: 40vh;
+  background:url(../image/sub-dp-09.jpg) no-repeat center bottom;
+  background-size:cover;
+  /* display: flex; */
+
+}
+.img-box .grid:nth-child(4){
+  grid-area: span 1/span 2;
+  background:url(../image/sub-dp-03.jpg) no-repeat center bottom;
+  background-size:cover;
+  /* display: flex; */
+}
+.img-box .grid:nth-child(5){
+  grid-area: span 1/span 2;
+  background:url(../image/sub-dp-01.jpg) no-repeat center bottom;
+  background-size:cover;}
+.img-box .grid:nth-child(6){
+  grid-area: span 1/span 3;
+  background:url(../image/sub-dp-06.jpg) no-repeat center bottom;
+  background-size:cover;}
+
+/* section 2 ================== */
+#wrap3{
+  height: 100vh;
   overflow-y: scroll;
+  background-color: #202020;
 }
 #event{
+  /* border: 1px solid red; */
   height: 700px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 #event h1{
   color: #D6D6D6;
@@ -122,15 +271,14 @@ body{background-color:#202020;}
   font-family: 'Cafe24ClassicType-Regular';
 }
 .pattern{
-  position: fixed;
-  top: 7%;
-  left: -5%;
-  width: 100%;
-  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: -5vw;
+  width: 100vw;
   height: 100vh;
 }
 .pattern img{
-  width: 120%;
+  width: 125%;
 }
 .circle{
   position: relative;
@@ -139,6 +287,7 @@ body{background-color:#202020;}
   width: 100%;
   height: 400px;
   z-index: 100;
+  /* border: 1px solid #000; */
 }
 .more{
   font-size: 1.5rem;
@@ -187,14 +336,12 @@ body{background-color:#202020;}
   border-radius: 50%;
   box-shadow: 2px 5px 5px 2px #222;
 }
-
 /* 자주묻는 질문 */
 #faq{
   width: 100%;
   max-width: 90%;
   margin: auto auto 50px auto;
   line-height: 30px;
-  height: 50vh;
 }
 #faq h1{
   text-align: center;
@@ -204,76 +351,49 @@ body{background-color:#202020;}
   font-family: 'Cafe24ClassicType-Regular';
   color: #D6D6D6;
 }
-.accordion .title{
+.accordion .title,
+.accordion .content {
   background-color: #FEFAE0;
-  width: 90vw;
-  height: 7vh;
-  margin-bottom: 7px;
-  font-family: Pretendard, sans-serif;
+  position: relative;
+  padding: 10px 60px;
 }
 .accordion .title {
   cursor: pointer;
-  text-align: left;
-  line-height: 6vh;
-  text-indent: 60px;
-  position: relative;
-  top: 0;
-  left: 0;
+  border-bottom: 1px dashed #000;
 }
 .accordion .title:before {
-  content: '';
+  content:'';
   position: absolute;
+  top: 0.5vh;
+  left: 1vw;
+  transition: 0.35s;
+  background: url(../image/ques.svg)no-repeat;
   width: 100%;
   height: 100%;
-  top: 15%;
-  left: 2%;
-  background: url(../image/ques.svg)no-repeat;
 }
 .accordion .title:after {
-  position: absolute;
-  content: '\e5cf';
+  content:'\e5cf';
   font-family: 'Material Icons Outlined';
-  top: -10%;
-  left: 75%;
+  position: absolute;
+  top: 0;
+  right: 5vw;
   margin-top: 5px;
   transition: 0.35s;
 }
-.accordion .title.active:after {content: '\e5ce';}
-.accordion .title.active {
-  background-color: #FEFAE0;
+.accordion .content:before {
+  content:'';
+  position: absolute;
+  top: 3vh;
+  left: 1vw;
+  transition: 0.35s;
+  background: url(../image/answer.svg)no-repeat;
+  width: 100%;
+  height:100%;
 }
+.accordion .title.active:after {content: '\e5ce';}
+.accordion .title.active {background-color: #FEFAE0;}
 .accordion .content {
   display: none;
-  position: relative;
-}
-.accordion .content.active{
-  display: flex;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  border-radius: 0 0 30px 30px;
-  background-color: #FEFAE0;
-  width: 90vw;
-  height: 15vh;
-  text-align: left;
   margin-bottom: 7px;
-  font-family: Pretendard, sans-serif;
-  padding: 2vw 2vw 5vw 15vw;
-  overflow: hidden;
-  box-sizing: border-box;
-} 
-.accordion .content.active::before{
-  display: block;
 }
-.accordion .content:before {
-  display: none;
-  position: absolute;
-  content: '';
-  background: url(../image/answer.svg) no-repeat;
-  font-family: 'Material Icons Outlined';
-  top: 0%;
-  left: 0%;
-  width: 100vw;
-  height: 100vh;
-  margin: 1vw;
-  transition: 0.35s;
-}
+.accordion .content.active{display: block;}
