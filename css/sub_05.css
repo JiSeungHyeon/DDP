@@ -107,10 +107,13 @@ body{
   width: 50vw;
   height: 25vh;
   height: auto;
-  font-family: 'LOTTERIACHAB';
-  font-size: 2rem;
   padding-top: 3vh;
 }
+.left ul:nth-child(3) li img{
+  width: 50vw;
+  height: 20vh;
+}
+
 .left ul:nth-child(3):before{
   position: absolute;
   content: '';
