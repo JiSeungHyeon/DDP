@@ -9,11 +9,14 @@
   padding-top:50px;
 }
 body{background-color:#202020;}
+
+/* visual =================== */
 .visual{
+  height:100vh;
   position:relative;
   color:#D6D6D6;
   font-size:40px;
-  font-size:2.5rem;
+  font-size:15vw;
   margin:100px;
   margin:1.875rem;
   font-family: 'Abril Fatface', cursive;
@@ -28,12 +31,10 @@ body{background-color:#202020;}
   right:0;
   height:60px;
   height:3.75rem;
-  width:150px;
-  width:9.375rem;
+  width:33vw;
   object-fit:cover;
   border:1px solid #D6D6D6;
-  border-radius:15px;
-  border-radius:0.938rem;
+  border-radius:2vw;
 }
 .visual span:nth-of-type(2){
   display:block;
@@ -47,13 +48,13 @@ body{background-color:#202020;}
   content:'';
   height:1px;
   background-color:#D6D6D6;
-  right:45%;
+  right:60%;
   top:55%;
-  transform:translateY(-50%);
+  z-index:2;
 }
 .visual span:nth-of-type(3){
   position:absolute;
-  top:30vw;
+  top:35vw;
   left:0;
   z-index:1;
   background-color:#202020;
@@ -64,12 +65,13 @@ body{background-color:#202020;}
 .visual_img2{
   width:90vw;
   position:absolute;
-  top:40vw;
+  top:46vw;
   left:0;
+  z-index:-1;
 }
 .visual_more{
   position:absolute;
-  font-family: 'BookkMyungjo-Bd';
+  font-family: Pretendard, sans-serif;
   bottom:48vw;
   font-size:5vw;
   right:0;
@@ -103,9 +105,7 @@ body{background-color:#202020;}
 
 /* section 1 ================== */
 #wrap{
-  height: 100vh;
   overflow-y: scroll;
-  background-color: black;
 }
 #event{
   height: 700px;
@@ -145,7 +145,6 @@ body{background-color:#202020;}
   font-family: 'Abril Fatface', cursive;
   padding: 10px 20px;
   color: #FFD100;
-
 }
 .circle ul li:first-child img{
   position: absolute;

@@ -70,7 +70,7 @@ header{
   display:flex;
   justify-content:center;
   align-items:center;
-  z-index:200;
+  z-index:2000;
 }
 .trigger.active img{transform:rotate(-90deg);}
 .trigger img{
@@ -91,7 +91,7 @@ nav{
   transition:0.75s;
   background-color:#FFEE32;
   font-size:8vw;
-  z-index:100;
+  z-index:1000;
 }
 nav.active{clip-path:circle(124.5% at 100% 0);}
 nav li{

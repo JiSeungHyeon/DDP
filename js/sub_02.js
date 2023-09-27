@@ -1,6 +1,7 @@
 const figures = document.querySelector('.event');
 let st = window.getComputedStyle(figures, null);
 let currDeg = st.getPropertyValue("transform");
+console.log(currDeg);
 
 function nextMove() {
   figures.style.transform = `${currDeg}`;
