@@ -1,8 +1,8 @@
 @import url(common.css);
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
 
-
 #wrap{
+  background-color: #202020;
   height: 100vh;
 }
 
@@ -11,72 +11,60 @@
   width: 100%;
   max-width: 90%;
   margin: auto auto 50px auto;
+  padding-top: 50px;
   line-height: 30px;
-  height: 300px;
 }
 #faq h1{
   text-align: center;
   font-size: 2.5rem;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   font-family: 'Cafe24ClassicType-Regular';
+  color: #D6D6D6;
 }
-.accordion .title{
+.accordion .title,
+.accordion .content {
   background-color: #FEFAE0;
-  width: 90vw;
-  height: 6vh;
-  margin-bottom: 7px;
-  font-family: Pretendard, sans-serif;
+  position: relative;
+  padding: 10px 60px;
 }
 .accordion .title {
   cursor: pointer;
-  text-align: left;
-  line-height: 5vh;
-  text-indent: 60px;
-  position: relative;
-  top: 0;
-  left: 0;
+  border-bottom: 1px dashed #000;
 }
 .accordion .title:before {
-  content: '';
+  content:'';
   position: absolute;
+  top: 0.5vh;
+  left: 1vw;
+  transition: 0.35s;
+  background: url(../image/ques.svg)no-repeat;
   width: 100%;
   height: 100%;
-  top: 15%;
-  left: 2%;
-  background: url(../image/ques.png)no-repeat;
 }
 .accordion .title:after {
-  position: absolute;
-  content: '\e5cf';
+  content:'\e5cf';
   font-family: 'Material Icons Outlined';
-  top: -10%;
-  left: 75%;
+  position: absolute;
+  top: 0;
+  right: 5vw;
   margin-top: 5px;
   transition: 0.35s;
 }
-.accordion .title.active:after {transform: rotate(0deg);}
-.accordion .title.active {
-  background-color: #FEFAE0;
+.accordion .content:before {
+  content:'';
+  position: absolute;
+  top: 3vh;
+  left: 1vw;
+  transition: 0.35s;
+  background: url(../image/answer.svg)no-repeat;
+  width: 100%;
+  height:100%;
 }
+.accordion .title.active:after {content: '\e5ce';}
+.accordion .title.active {background-color: #FEFAE0;}
 .accordion .content {
   display: none;
-}
-.accordion .content.active{
-  font-size: 1rem;
-  line-height: 1.5rem;
-  padding-top: 0.6rem;
-  padding-left: 3.5rem;
-  border-radius: 0 0 30px 30px;
-  background-color: #FEFAE0;
-  width: 90vw;
-  height: 5.5rem;
   margin-bottom: 7px;
-  font-family: Pretendard, sans-serif;
-} 
-footer{
-  text-align: center;
 }
-footer p{
-  font-style: normal;
-}
+.accordion .content.active{display: block;} 
