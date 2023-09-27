@@ -30,7 +30,8 @@ section h1{
   justify-content:center;
   align-items:center;
   transform-style:preserve-3d;
-  animation:ani linear 60s infinite;
+  transition:0.5s;
+  /* animation:ani linear 60s infinite; */
 }
 .event figure{
   position:absolute;

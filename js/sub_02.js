@@ -1,13 +1,16 @@
 const figures = document.querySelector('.event');
-let st = window.getComputedStyle(figures, null);
-let currDeg = st.getPropertyValue("transform");
-console.log(currDeg);
+let currDeg = 0;
+let rotateDeg;
 
 function nextMove() {
-  figures.style.transform = `${currDeg}`;
+  rotateDeg = currDeg + 45;
+  figures.style.transform = `rotateY(${rotateDeg}deg)`;
+  currDeg = rotateDeg;
 }
 function prevMove() {
-  figures.style.transform = `${currDeg}`;
+  rotateDeg = currDeg - 45;
+  figures.style.transform = `rotateY(${rotateDeg}deg)`;
+  currDeg = rotateDeg;
 }
 
 let startPoint = 0;
