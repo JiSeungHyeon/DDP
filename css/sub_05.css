@@ -113,6 +113,7 @@ body{
   width: 50vw;
   height: 20vh;
 }
+
 .left ul:nth-child(3):before{
   position: absolute;
   content: '';

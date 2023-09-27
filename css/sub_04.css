@@ -63,6 +63,7 @@ body{
   margin: 7vh 0;
   font-size: 4vw;
   line-height: 5vw;
+
 }
 .one{
   width: 100vw;
@@ -105,6 +106,7 @@ body{
   height: 2vh;
   position: relative;
   z-index: 10;
+
   padding: 2vw;
   box-sizing: border-box;
 }
@@ -146,7 +148,6 @@ body{
   width: 100vw;
   height: 10vh;
   background: url(../image/Ellipse\ 14.svg)no-repeat;
-  z-index: -1;
 }
 .five{
   width: 100vw;
@@ -176,11 +177,12 @@ body{
   height: 15vh;
   background: url(../image/Polygon\ 2.svg)no-repeat;
   background-size: contain;
+
   z-index: -1;
 }
 .six{
   width: 100vw;
-  height: 5vh;
+  height: 3vh;
   position: relative;
   z-index: 10;
   text-align: right;
