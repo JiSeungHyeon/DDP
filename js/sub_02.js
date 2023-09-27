@@ -1,15 +1,24 @@
-const figures = document.querySelector('.event');
-let currDeg = 0;
-let rotateDeg;
+const slide = document.querySelector(".figure");
+let slideWidth = slide.clientWidth;
+const slideItems = document.querySelectorAll(".figure");
+let currSlide = 1;
 
 function nextMove() {
-  rotateDeg = currDeg + 45;
-  figures.style.transform = `rotateY(${rotateDeg}deg)`;
-  currDeg = rotateDeg;
+  currSlide++;
+  if (currSlide <= maxSlide) {
+    // 슬라이드를 이동시키기 위한 offset 계산
+    const offset = slideWidth * (currSlide - 1);
+    // 각 슬라이드 아이템의 left에 offset 적용
+    slideItems.forEach((i) => {
+      i.setAttribute("style", `left: ${-offset}px`);
+    });
+  } else {
+    currSlide--;
+  }
 }
 function prevMove() {
   rotateDeg = currDeg - 45;
-  figures.style.transform = `rotateY(${rotateDeg}deg)`;
+  figures.style = `right:${rotateDeg}`;
   currDeg = rotateDeg;
 }
 
@@ -18,7 +27,6 @@ let endPoint = 0;
 
 // PC 클릭 이벤트 (드래그)
 figures.addEventListener("mousedown", (e) => {
-  figures.style.animationPlayState = 'paused';
   startPoint = e.pageX;
 });
 
@@ -29,12 +37,10 @@ figures.addEventListener("mouseup", (e) => {
   } else {
     nextMove();
   }
-  figures.style.animationPlayState = 'running';
 });
 
 // 모바일 터치 이벤트 (스와이프)
 figures.addEventListener("touchstart", (e) => {
-  figures.style.animationPlayState = 'paused';
   startPoint = e.touches[0].pageX;
 });
 
@@ -45,5 +51,4 @@ figures.addEventListener("touchend", (e) => {
   } else {
     nextMove();
   }
-  figures.style.animationPlayState = 'running';
 });

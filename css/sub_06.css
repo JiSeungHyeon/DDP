@@ -1,6 +1,10 @@
+/* header=============== */
 #tap_bar a{color:#E62F8B;}
 #top a{color:#E62F8B;}
-nav{background-color:#7BF3BB;}
+nav{background-color:rgba(36,255,152,1);}
+.trigger{background-color:#E62F8B;}
+.trigger img{filter:invert();}
+.back span{color:#E62F8B;}
 
 body{
   position:relative;
@@ -73,3 +77,25 @@ dd{
 .seoul_design_info img{
   width:100vw;
 }
+table{
+  border-collapse:collapse;
+  text-align: center;
+  color:#E62F8B;
+  margin:15vw auto;
+  font-size:3vw; 
+}
+tr{
+  border:1px solid #E62F8B;
+  background-color:rgba(230, 47, 139,0.2);
+}
+tr:first-child{font-weight:700;}
+tr td{padding:2vw;}
+tr>td{border-right:1px solid #E62F8B;}
+.table_left{font-weight:700;}
+
+/* footer============== */
+footer{color:#E62F8B;}
+footer ul li:nth-child(2){background-color:rgba(230, 47, 139,0.2);}
+address p:first-child{color:#E62F8B;}
+address p:nth-child(2){color:#E62F8B;}
+address p:nth-child(3){color:#E62F8B;}
