@@ -1,4 +1,4 @@
-#tap_bar a{color:#202020;}
+#tap_bar a{color:#fff;}
 #top a{color:#202020;}
 #top{background-color:#fff;}
 .back span{color:#D6D6D6}
@@ -91,8 +91,9 @@ body{background-color:#202020;}
   z-index:2;
   background-color:#202020;
   color:#D6D6D6;
-  right:1vw;
-  padding:1vw;
+  right:2vw;
+  padding:2vw;
+  box-sizing:border-box;
   height:20vw;
   text-transform:capitalize;
   top:8vw;

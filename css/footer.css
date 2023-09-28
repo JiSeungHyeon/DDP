@@ -1,4 +1,6 @@
-footer{padding-bottom:15vh;}
+footer{
+  padding:7vh 0;
+}
 
 footer ul{
   display: flex;

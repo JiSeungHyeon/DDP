@@ -213,5 +213,26 @@
   font-size:4vw;
   text-align:center;
 }
+.visual_touch{
+  display:inline-block;
+  width:100%;
+  padding:30px;
+  position:absolute;
+  opacity:0;
+  bottom:5%;
+  left:50%;
+  transform:translateX(-50%);
+  animation-name:tracking-in-expand;
+  animation-duration:1.3s;
+  animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  animation-fill-mode:forwards;
+  animation-delay:9s;
+  color:#6b3c28;
+  font-weight:900;
+  font-size:5vw;
+  text-align:center;
+  background-color:rgba(255,255,255,0.7);
+  text-transform:uppercase;
+}
 
 
