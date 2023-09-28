@@ -13,8 +13,8 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'LOTTERIACHAB';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIACHAB.woff2') format('woff2');
+  font-family: 'CWDangamAsac-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/CWDangamAsac-Bold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -41,6 +41,7 @@ body{
   height:100%;
   -webkit-text-size-adjust:none;
 }
+nav li{list-style-type: none;}
 #wrap{
   min-width:320px;
   width:100%;
@@ -105,15 +106,16 @@ body{
 .left ul:nth-child(3){
   /* border: 1px solid #000; */
   width: 50vw;
-  height: 25vh;
+  height: 20vh;
   height: auto;
   padding-top: 3vh;
+  font-family: 'CWDangamAsac-Bold';
+  font-size: 5vh;
 }
 .left ul:nth-child(3) li img{
   width: 50vw;
   height: 20vh;
 }
-
 .left ul:nth-child(3):before{
   position: absolute;
   content: '';

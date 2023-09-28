@@ -16,10 +16,9 @@
   transition:0.35s;
 }
 #tap_bar.active{bottom:0px;}
-#tap_bar a{
-  color:#fff;
+#tap_bar a img{
+  width:7vw;
   transition:0.35s;
-  font-size:5vw;
 }
 
 /* top============================ */
@@ -89,7 +88,7 @@ nav{
   box-sizing:border-box;
   clip-path:circle(0% at calc(100vw - 27px) 27px);
   transition:0.75s;
-  background-color:#FFEE32;
+  background-color:#FFD100;
   font-size:8vw;
   z-index:2000;
 }
@@ -101,9 +100,11 @@ nav li{
 nav a{
   display:block;
   color:#202020;
+  text-decoration:none;
 }
 .lnb li{margin:30px 0;}
 .lnb a{
   font-size:5vw;
   font-weight:500;
+  text-decoration:none;
 }
