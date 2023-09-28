@@ -250,12 +250,10 @@ a{color: #202020;}
 
 /* section 2 ================== */
 #wrap3{
-  height: 100vh;
-  overflow-y: scroll;
+  overflow-x: hidden;
   background-color: #202020;
 }
 #event{
-  /* border: 1px solid red; */
   height: 700px;
   text-align: center;
   display: flex;
@@ -263,6 +261,7 @@ a{color: #202020;}
   align-items: center;
   justify-content: center;
   position: relative;
+  overflow: hidden;
 }
 #event h1{
   color: #D6D6D6;
@@ -287,14 +286,20 @@ a{color: #202020;}
   width: 100%;
   height: 400px;
   z-index: 100;
-  /* border: 1px solid #000; */
 }
 .more{
   font-size: 1.5rem;
   font-family: 'Abril Fatface', cursive;
   padding: 10px 20px;
-  color: #FFD100;
+  border: 1px solid #FFD100;
+  background-color:transparent;
+  position:relative;
+  transition:0.35s;
+  z-index:10;
 }
+.more a{color:#FFD100;}
+.more:hover{background-color: #FFD100;}
+.more:hover a{color:#202020;}
 .circle ul li:first-child img{
   position: absolute;
   top: 30%;

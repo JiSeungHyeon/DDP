@@ -11,19 +11,29 @@ section{
   height:90vh;
   overflow-x:hidden;
 }
-.event_bg{
+.event_bg img{
   position:absolute;
   opacity:0.7;
 }
 .event_bg img:nth-child(1){
   top:0;
 }
-.event_bg img:nth-child(){
-  top:5vw;
+.event_bg img:nth-child(2){
+  top:10vw;
   right:0;
-  transform:scaleX(-1)rotate(90deg);
+  transform:scaleX(-1);
+}
+.event_bg img:nth-child(3){
+  bottom:70vw;
+  left:0;
+}
+.event_bg img:nth-child(4){
+  bottom:40vw;
+  right:0;
 }
 section h1{
+  position:relative;
+  top:15vh;
   color:#D6D6D6;
   text-align:center;
 }

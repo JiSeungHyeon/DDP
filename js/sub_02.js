@@ -2,24 +2,35 @@ const slide = document.querySelector(".figure");
 let slideWidth = slide.clientWidth;
 const slideItems = document.querySelectorAll(".figure");
 let currSlide = 1;
+const maxSlide = slideItems.length;
 
 function nextMove() {
   currSlide++;
+  // 마지막 슬라이드 이상으로 넘어가지 않게 하기 위해서
   if (currSlide <= maxSlide) {
     // 슬라이드를 이동시키기 위한 offset 계산
     const offset = slideWidth * (currSlide - 1);
     // 각 슬라이드 아이템의 left에 offset 적용
     slideItems.forEach((i) => {
-      i.setAttribute("style", `left: ${-offset}px`);
+      i.setAttribute("style", `left: -${offset}px`);
     });
   } else {
     currSlide--;
   }
 }
 function prevMove() {
-  rotateDeg = currDeg - 45;
-  figures.style = `right:${rotateDeg}`;
-  currDeg = rotateDeg;
+  currSlide--;
+  // 1번째 슬라이드 이하로 넘어가지 않게 하기 위해서
+  if (currSlide > 0) {
+    // 슬라이드를 이동시키기 위한 offset 계산
+    const offset = slideWidth * (currSlide - 1);
+    // 각 슬라이드 아이템의 left에 offset 적용
+    slideItems.forEach((i) => {
+      i.setAttribute("style", `left: -${offset}px`);
+    });
+  } else {
+    currSlide++;
+  }   
 }
 
 let startPoint = 0;
