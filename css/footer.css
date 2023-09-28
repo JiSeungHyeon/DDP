@@ -1,7 +1,4 @@
-footer{
-  padding:7vh 0;
-}
-
+footer{padding:7vh 0;}
 footer ul{
   display: flex;
   text-align: center;
@@ -24,6 +21,7 @@ footer ul li span{
   color: #989898;
 }
 address{
+  margin-top:5vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
