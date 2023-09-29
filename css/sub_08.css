@@ -1,0 +1,201 @@
+@import url('common.css');
+
+body{
+  background-color: #202020;
+}
+
+@keyframes line-ani{
+  0%{
+    top: 200%;
+    right: 200%;
+  }
+  100%{
+    top: -200%;
+    right: -200%;
+  }
+}
+
+.line{
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: -10;
+}
+
+.line01{
+  transform: translateY(-80%);
+}
+.line02{
+  transform: translateY(-65%);
+}
+.line03{
+  transform: translateY(20%);
+}
+.line04{
+  transform: translateY(25%);
+}
+.line05{
+  transform: translateY(65%);
+}
+.line06{
+  transform: translateY(85%);
+}
+
+.line01::before,
+.line02::before,
+.line03::before,
+.line04::before,
+.line05::before,
+.line06::before{
+  position: absolute;
+  content: '';
+  z-index: -10;
+}
+
+.line01::before{
+  width: 40vw;
+  height: 200%;
+  background-color: #fff;
+  opacity: 0.3;
+  border-radius: 500px;
+  transform: rotate(45deg);
+  top: -100%;
+  right: -100%;
+  animation: 7s ease-in 1s infinite reverse both running line-ani;
+}
+.line02::before{
+  width: 1vw;
+  height: 200%;
+  background-color: #fff;
+  opacity: 0.3;
+  border-radius: 500px;
+  transform: rotate(45deg);
+  top: -100%;
+  right: -100%;
+  animation: 5s ease-in 1s infinite reverse both running line-ani;
+}
+.line03::before{
+  width: 5vw;
+  height: 200%;
+  background-color: #FFD100;
+  border-radius: 500px;
+  transform: rotate(45deg);
+  top: -100%;
+  right: -100%;
+  animation: 3s ease-in 1s infinite reverse both running line-ani;
+}
+.line04::before{
+  width: 1vw;
+  height: 200%;
+  background-color: #FFD100;
+  border-radius: 500px;
+  transform: rotate(45deg);
+  top: -100%;
+  right: -100%;
+  animation: 4s ease-in 1s infinite reverse both running line-ani;
+}
+.line05::before{
+  width: 20vw;
+  height: 200%;
+  background-color: #FFD100;
+  border-radius: 500px;
+  transform: rotate(45deg);
+  top: -100%;
+  right: -100%;
+  animation: 5s ease-in 1s infinite reverse both running line-ani;
+}
+.line06::before{
+  width: 8vw;
+  height: 200%;
+  background-color: #FFD100;
+  border-radius: 500px;
+  transform: rotate(45deg);
+  top: -100%;
+  right: -100%;
+  animation: 6s ease-in 1s infinite reverse both running line-ani;
+}
+
+
+
+h3{
+  font-size: 8.5vw;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  margin: 50px 50px 50px;
+}
+
+section{
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr); /* 5개씩 정렬 */
+  margin: 50px auto 50px;
+  z-index: 10;
+}
+
+.img-box{
+  width: 100%;
+  height: 30vw;
+  transition: 0.25;
+}
+
+.img-box:hover{
+  opacity: 0.8;
+}
+
+section .img-box:nth-child(1){
+  background:url(../image/sub-dp-01.jpg) no-repeat center bottom;
+	background-size:cover;
+  height: 60vw;
+  grid-area: span 2/span 1; /* 행/열 */
+}
+section .img-box:nth-child(2){
+  background:url(../image/sub-dp-02.jpg) no-repeat center bottom;
+	background-size:cover;
+}
+section .img-box:nth-child(3){
+  background:url(../image/sub-dp-03.jpg) no-repeat center bottom;
+	background-size:cover;
+}
+section .img-box:nth-child(4){
+  background:url(../image/sub-dp-04.jpg) no-repeat center bottom;
+	background-size:cover;
+  grid-area: span 1/span 2;
+}
+section .img-box:nth-child(5){
+  background:url(../image/sub-dp-05.jpg) no-repeat center bottom;
+	background-size:cover;
+}
+section .img-box:nth-child(6){
+  background:url(../image/sub-dp-06.jpg) no-repeat center bottom;
+	background-size:cover;
+}
+section .img-box:nth-child(7){
+  background:url(../image/sub-dp-07.jpg) no-repeat center bottom;
+	background-size:cover;
+  grid-area: span 1/span 2;
+}
+section .img-box:nth-child(8){
+  background:url(../image/sub-dp-08.jpg) no-repeat center bottom;
+	background-size:cover;
+}
+section .img-box:nth-child(9){
+  background:url(../image/sub-dp-09.jpg) no-repeat center bottom;
+	background-size:cover;
+  grid-area: span 2/span 1; /* 행/열 */
+  height: 60vw;
+
+}
+section .img-box:nth-child(10){
+  background-color: #FFD100;
+  font-size: 7vw;
+  color: #000;
+  font-weight: 900;
+  box-sizing: border-box;
+  padding: 5%;
+  line-height: 8.5vw;
+}
+section .img-box:nth-child(10) p{
+  margin-top: 9vw;
+  font-size: 12vw;
+}
