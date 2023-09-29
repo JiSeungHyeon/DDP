@@ -89,7 +89,7 @@ nav{
   clip-path:circle(0% at calc(100vw - 27px) 27px);
   transition:0.75s;
   background-color:#FFD100;
-  font-size:8vw;
+  font-size:7vw;
   z-index:2000;
 }
 nav.active{clip-path:circle(124.5% at 100% 0);}

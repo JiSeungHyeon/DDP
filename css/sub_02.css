@@ -7,8 +7,8 @@ body{background-color:#202020;}
 /* event=================== */
 section{
   width:100vw;
+  height:80vh;
   position:relative;
-  height:70vh;
   overflow-x:hidden;
 }
 .event_bg img{
@@ -43,14 +43,15 @@ section h1{
 }
 .event{
   position:relative;
+  top:40vw;
   width:inherit;
+  height:40vh;
   display:flex;
   flex-wrap:nowrap;
   user-select:none;
 }
 .event figure{
   position:relative;
-  top:40vw;
   left:0px;
   margin:0 3vw;
   width:94vw;
@@ -63,7 +64,7 @@ section h1{
 .event figure:before{
   position:absolute;
   width:90%;
-  top:120%;
+  top:90%;
   color:#D6D6D6;
   font-weight:500;
   left:50%;
