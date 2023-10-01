@@ -7,7 +7,7 @@ body{background-color:#202020;}
 /* event=================== */
 section{
   width:100vw;
-  height:80vh;
+  height:85vh;
   position:relative;
   overflow-x:hidden;
 }
@@ -20,8 +20,8 @@ section{
 }
 .event_bg img:nth-child(2){
   top:10vw;
-  right:0;
-  transform:scaleX(-1);
+  right:10vw;
+  transform:scaleX(-1) scale(1.5);
 }
 .event_bg img:nth-child(3){
   bottom:20vw;

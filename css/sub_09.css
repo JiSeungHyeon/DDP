@@ -1,70 +1,139 @@
-@import url(common.css);
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+@charset "utf-8";
+#tap_bar a{color:rgba(255,209,0,0.6);}
+#top a{color:#202020;}
+nav{background-color:#4D4419}
+nav li{color:#D6D6D6;}
+nav a{color:#D6D6D6;}
 
-#wrap{
-  background-color: #202020;
-  height: 100vh;
+body{background-color:#202020;}
+
+/* main========================== */
+main{
+  color:#FFFFFF;
+  width:100vw;
+  display:flex;
+  overflow-x:hidden;
+  position:relative;
+}
+.service_img{
+  position:sticky;
+  width:60vw;
+  margin-left:5vw;
+}
+.service_img img{
+  width:100vw;
+}
+main h1{
+  display:inline-block;
+  position:relative;
+  padding-top:30vh;
+  padding-left:10vw;
+  writing-mode: vertical-lr;
+  font-size:7vw;
+}
+main h1:before{
+  content:'';
+  position:absolute;
+  top:20%;
+  right:0;
+  width:70%;
+  height:30%;
+  background-color:rgba(255,209,0,0.2);
+  z-index:-1;
+}
+main h1:after{
+  content:'';
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  right:0;
+  width:2px;
+  height:30%;
+  background-color:#FFEE32;
 }
 
-/* 자주묻는 질문 */
-#faq{
-  width: 100%;
-  max-width: 90%;
-  margin: auto auto 50px auto;
-  padding-top: 50px;
-  line-height: 30px;
+/* section=========================== */
+section{
+  width:100vw;
+  position:relative;
 }
-#faq h1{
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: 500;
-  margin-bottom: 50px;
-  font-family: 'Cafe24ClassicType-Regular';
-  color: #D6D6D6;
+.service_1{
+  padding:5vw;
+  background-color:rgba(254,250,224,0.75);
+  margin:5vh 0;
+  color:#202020;
 }
-.accordion .title,
-.accordion .content {
-  background-color: #FEFAE0;
-  position: relative;
-  padding: 10px 60px;
+.service_1 h2{
+  text-align:center;
+  margin:1vh 0;
+  font-size:6vw;
 }
-.accordion .title {
-  cursor: pointer;
-  border-bottom: 1px dashed #000;
+.service_1 p{
+  font-weight:500;
+  text-indent:9px;
+  font-size:4vw;
 }
-.accordion .title:before {
-  content:'';
-  position: absolute;
-  top: 0.5vh;
-  left: 1vw;
-  transition: 0.35s;
-  background: url(../image/ques.svg)no-repeat;
-  width: 100%;
-  height: 100%;
+
+.service_2{
+  padding:4vw;
+  color:#D6D6D6;
+  border-radius:0 0 50px 0;
+  border:2px solid #D6D6D6;
+  border-left:none;
+  margin-right:10vw;
 }
-.accordion .title:after {
-  content:'\e5cf';
-  font-family: 'Material Icons Outlined';
-  position: absolute;
-  top: 0;
-  right: 5vw;
-  margin-top: 5px;
-  transition: 0.35s;
+.service_2 h2{
+  font-size:5vw;
+  margin:1vh 0;
 }
-.accordion .content:before {
-  content:'';
-  position: absolute;
-  top: 3vh;
-  left: 1vw;
-  transition: 0.35s;
-  background: url(../image/answer.svg)no-repeat;
-  width: 100%;
-  height:100%;
+.service_2 p{
+  font-weight:500;
+  font-size:3.5vw;
+  line-height:1.5;
 }
-.accordion .title.active:after {content: '\e5ce';}
-.accordion .title.active {background-color: #FEFAE0;}
-.accordion .content {
-  display: none;
-  margin-bottom: 7px;
+.service_2 b{font-weight:900;}
+
+.service_3{
+  padding:4vw;
+  color:#D6D6D6;
+  border-radius:0 0 0 50px;
+  border:2px solid #D6D6D6;
+  border-right:none;
+  margin-left:10vw;
+  margin-top:5vh;
+  margin-bottom:7vh;
 }
-.accordion .content.active{display: block;} 
+.service_3 h2{
+  font-size:5vw;
+  margin:1vh 0;
+}
+.service_3 p{
+  font-weight:500;
+  font-size:3.5vw;
+  line-height:1.5;
+}
+.service_3 b{font-weight:900;}
+
+/* background================ */
+.service_bg, .service_bg_first{
+  position:relative;
+  opacity:0.7;
+  z-index:-1;
+}
+.service_bg_first img{
+  position:absolute;
+  top:0;
+  left:2vw;
+  z-index:-5;
+}
+.service_bg img:nth-child(1){
+  position:absolute;
+  top:-100vh;
+  left:20vw;
+  z-index:-5;
+}
+.service_bg img:nth-child(2){
+  position:absolute;
+  bottom:0;
+  z-index:-5;
+}

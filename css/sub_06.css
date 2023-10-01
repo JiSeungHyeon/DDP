@@ -113,7 +113,14 @@ tr>td{border-right:1px solid #E62F8B;}
 
 /* footer============== */
 footer{color:#E62F8B;}
-footer ul li:nth-child(2){background-color:rgba(230, 47, 139,0.2);}
+footer ul li{
+  border-top:1px solid #E62F8B;
+  border-bottom:1px solid #E62F8B;
+}
+footer ul li:nth-child(2){
+  border-left:1px solid #E62F8B;
+  background-color:rgba(230, 47, 139,0.2);
+}
 address p:first-child{color:#E62F8B;}
 address p:nth-child(2){color:#E62F8B;}
 address p:nth-child(3){color:#E62F8B;}
