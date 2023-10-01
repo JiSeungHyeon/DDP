@@ -1,9 +1,9 @@
 /* header=============== */
-#tap_bar a img{filter:invert();}
+#tap_bar a img{filter:invert(100%);}
 #top a{color:#E62F8B;}
 nav{background-color:rgba(36,255,152,1);}
 .trigger{background-color:#E62F8B;}
-.trigger img{filter:invert();}
+.trigger img{filter:invert(100%);}
 .back span{color:#E62F8B;}
 
 body{

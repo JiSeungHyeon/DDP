@@ -29,13 +29,15 @@ main h2{
   font-size: 8vw;
   text-align: center;
 }
-main h2 p{
+main h2 b{
+  display:block;
   position: relative;
   margin-top: 2vw;
   font-size: 5.5vw;
+  font-weight:500;
   font-family: 'Cormorant', serif;
 }
-main h2 p::before{
+main h2 b::before{
   position: absolute;
   content: '';
   width: 50%;
@@ -45,7 +47,7 @@ main h2 p::before{
   background-color: #fff;
   transform: translateY(-50%);
 }
-main h2 p::after{
+main h2 b::after{
   position: absolute;
   content: '';
   width: 50%;

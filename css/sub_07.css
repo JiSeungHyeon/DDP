@@ -110,7 +110,7 @@ section{
 .img-box{
   width: 100%;
   height: 30vw;
-  transition: 0.25;
+  transition: 0.25s;
 }
 
 .img-box:hover{
