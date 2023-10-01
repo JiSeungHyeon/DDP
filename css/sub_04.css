@@ -249,14 +249,16 @@ nav li a{color: #fff;}
 }
 
 footer{
-  padding-top: 5vh;
+  padding:7vh 0;
+  margin-bottom:8vh;
   overflow: hidden;
-  height: 400px;
+  height:350px;
+  font-weight:500;
 }
 address{
   text-align: left;
   position: relative;
-  font-size: 0.8rem;
+  font-size:3vw;
   padding: 5% 0 0 5%;
   color: #fff;
   margin: 10%;
@@ -264,13 +266,16 @@ address{
 address:before{
   content: '';
   position: absolute;
-  top: -7vh;
+  top: -6vh;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height:80vh;
   background: url(../image/footerbg.svg)no-repeat;
   background-size: contain;
 }
 footer p{
   font-style: normal;
 }
+
+#tap_bar{bottom:0px;}
+#top{bottom:8vh;}

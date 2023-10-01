@@ -6,6 +6,7 @@ nav li{color:#D6D6D6;}
 nav a{color:#D6D6D6;}
 
 body{background-color:#202020;}
+#wrap{overflow-x:hidden;}
 
 /* main========================== */
 main{
@@ -108,6 +109,7 @@ section{
   margin:1vh 0;
 }
 .service_3 p{
+  padding:3vw;
   font-weight:500;
   font-size:3.5vw;
   line-height:1.5;

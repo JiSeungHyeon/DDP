@@ -6,39 +6,19 @@ body{
 
 @keyframes line-ani{
   0%{
-    top: 200%;
-    right: 200%;
+    top: 150%;
   }
   100%{
-    top: -200%;
-    right: -200%;
+    top: -150%;
   }
 }
 
 .line{
-  position:absolute;
+  position: absolute;
   width: 100vw;
-  height:100vw;
-  z-index: -10;
-}
-
-.line01{
-  transform: translateY(-80%);
-}
-.line02{
-  transform: translateY(-65%);
-}
-.line03{
-  transform: translateY(20%);
-}
-.line04{
-  transform: translateY(25%);
-}
-.line05{
-  transform: translateY(65%);
-}
-.line06{
-  transform: translateY(85%);
+  height: 280vw;
+  /* z-index: -10; */
+  overflow: hidden;
 }
 
 .line01::before,
@@ -54,64 +34,58 @@ body{
 
 .line01::before{
   width: 40vw;
-  height: 200%;
+  height: 80%;
   background-color: #fff;
   opacity: 0.3;
   border-radius: 500px;
-  transform: rotate(45deg);
-  top: -100%;
-  right: -100%;
+  top: 0%;
+  left: -10%;
   animation: 7s ease-in 1s infinite reverse both running line-ani;
 }
 .line02::before{
   width: 1vw;
-  height: 200%;
+  height: 80%;
   background-color: #fff;
   opacity: 0.3;
   border-radius: 500px;
-  transform: rotate(45deg);
-  top: -100%;
-  right: -100%;
+  top: 0%;
+  left: 80%;
   animation: 5s ease-in 1s infinite reverse both running line-ani;
 }
 .line03::before{
   width: 5vw;
-  height: 200%;
+  height: 80%;
   background-color: #FFD100;
   border-radius: 500px;
-  transform: rotate(45deg);
-  top: -100%;
-  right: -100%;
+  top: 0%;
+  right: 10%;
   animation: 3s ease-in 1s infinite reverse both running line-ani;
 }
 .line04::before{
   width: 1vw;
-  height: 200%;
+  height: 80%;
   background-color: #FFD100;
   border-radius: 500px;
-  transform: rotate(45deg);
-  top: -100%;
-  right: -100%;
+  top: 0%;
+  left: 20%;
   animation: 4s ease-in 1s infinite reverse both running line-ani;
 }
 .line05::before{
   width: 20vw;
-  height: 200%;
+  height: 80%;
   background-color: #FFD100;
   border-radius: 500px;
-  transform: rotate(45deg);
-  top: -100%;
-  right: -100%;
+  top: 0%;
+  right: 40%;
   animation: 5s ease-in 1s infinite reverse both running line-ani;
 }
 .line06::before{
-  width: 8vw;
-  height: 200%;
+  width: 12vw;
+  height: 80%;
   background-color: #FFD100;
   border-radius: 500px;
-  transform: rotate(45deg);
-  top: -100%;
-  right: -100%;
+  top: 0%;
+  right: 60%;
   animation: 6s ease-in 1s infinite reverse both running line-ani;
 }
 
@@ -182,7 +156,7 @@ section .img-box:nth-child(8){
 section .img-box:nth-child(9){
   background:url(../image/sub-dp-09.jpg) no-repeat center bottom;
 	background-size:cover;
-  grid-area: span 2/span 1; /* 행/열 */
+  grid-area: span 2/span 1;
   height: 60vw;
 
 }
@@ -198,4 +172,8 @@ section .img-box:nth-child(10){
 section .img-box:nth-child(10) p{
   margin-top: 9vw;
   font-size: 12vw;
+}
+footer{
+  padding-top:0;
+  background-color:#202020;
 }

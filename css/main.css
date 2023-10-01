@@ -25,13 +25,13 @@ body{background-color:#202020;}
 .visual span:nth-of-type(1){
   position:relative;
   z-index:1;
+  margin-right:2vw;
 }
 .visual_img1{
   position:absolute;
   right:0;
-  height:60px;
-  height:3.75rem;
-  width:33vw;
+  height:20vw;
+  width:30vw;
   object-fit:cover;
   border:1px solid #D6D6D6;
   border-radius:2vw;
@@ -40,7 +40,7 @@ body{background-color:#202020;}
   display:block;
   text-align:right;
   position:relative;
-  padding-top:1rem;
+  z-index:3;
 }
 .visual span:nth-of-type(2):before{
   width:100vw;

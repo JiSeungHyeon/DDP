@@ -1,9 +1,10 @@
 @import url(common.css);
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
 
-#wrap{
-  background-color: #202020;
-  height: 100vh;
+#wrap{background-color: #202020;}
+#tap_bar{
+  backdrop-filter:blur(30px);
+  -webkit-backdrop-filter:blur(30px);
 }
 
 /* 자주묻는 질문 */
@@ -72,5 +73,4 @@
 
 footer{ 
   background-color: #202020;
-  margin-top: 10vh;
 }

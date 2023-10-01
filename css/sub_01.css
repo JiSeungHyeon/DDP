@@ -1,6 +1,7 @@
-@import url('header.css');
+*{overflow-x:hidden;}
+#tap_bar{bottom:0px;}
+#top{bottom:8vh;}
 
-*{ overflow-x:hidden;}
 body{background-color: #202020;}
 .main-img{
   width: 100%;
@@ -50,6 +51,7 @@ main p{
   width:65%;
   padding: 20px;
   z-index: 1;
+  overflow-y:hidden;
 }
 main .box{
   position: absolute;
