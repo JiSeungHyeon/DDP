@@ -12,7 +12,7 @@ prevBtn.style.display = 'none';
 function hideBtn(){
   if(currSlide===1){
     prevBtn.style.display = 'none';
-  } else if(currSlide===7){
+  } else if(currSlide>=7){
     nextBtn.style.display = 'none';
   } else{
     prevBtn.style.display = 'inline-block';
