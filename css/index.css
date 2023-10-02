@@ -180,7 +180,7 @@
   animation-delay:3s;
   animation-fill-mode:forwards;
 }
-#gif_container a img{width:100vw;}
+#gif_container a img{width:100vw;height:100vh}
 
 /* text reveal================= */
 @keyframes tracking-in-expand {

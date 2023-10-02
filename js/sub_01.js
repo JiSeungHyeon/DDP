@@ -7,8 +7,23 @@ const slideItems = document.querySelectorAll(".best ul li");
 const maxSlide = slideItems.length;
 let currSlide = 1;
 
+prevBtn.style.display = 'none';
+
+function hideBtn(){
+  if(currSlide===1){
+    prevBtn.style.display = 'none';
+  } else if(currSlide===7){
+    nextBtn.style.display = 'none';
+  } else{
+    prevBtn.style.display = 'inline-block';
+    nextBtn.style.display = 'inline-block';
+  }
+}
+
 function nextMove() {
+  prevBtn.style.display = 'inline-block';
   currSlide++;
+  hideBtn();
   if (currSlide <= maxSlide) {
     const offset = slideWidth * (currSlide - 1);
     slideItems.forEach((i) => {
@@ -20,7 +35,9 @@ function nextMove() {
 }
 
 function prevMove() {
+  prevBtn.style.display = 'inline-block';
   currSlide--;
+  hideBtn();
   if (currSlide > 0) {
     const offset = slideWidth * (currSlide - 1);
     slideItems.forEach((i) => {
