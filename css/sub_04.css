@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 html{scroll-behavior:smooth;}
 nav{background-color:#007AEB;}
 .vote{
   background-color:#fff;
   border:1px solid #007AEB;
 }
+=======
+html{  scroll-behavior:smooth;}
+nav{background-color:#007AEB;}
+>>>>>>> 10912ba62b661787d8facc068eef22dcee77328e
 nav li{
   list-style-type: none;
   color: #fff;
