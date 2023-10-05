@@ -1,15 +1,28 @@
-@import url('common.css');
+*{overflow-x:hidden;}
+#tap_bar{bottom:0px;}
+#top{bottom:8vh;}
 
-
+body{background-color: #202020;}
 .main-img{
   width: 100%;
   position: relative;
 }
-
 .main-img img{
   width: 100%;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    bottom: -100px;
+  }
+
+  to {
+    opacity: 1;
+    bottom: 10px;
+  }
+}
+main .main-img{overflow: hidden;}
 main h1{
   position: absolute;
   width: 70%;
@@ -19,7 +32,9 @@ main h1{
   color: #fff;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
   text-align: center;
+  line-height: 8vw;
   transform: translateX(-50%);
+  animation: fadeInUp 1.5s;
 }
 main h1 .title-txt{
   font-size: 5.5vw;
@@ -36,6 +51,7 @@ main p{
   width:65%;
   padding: 20px;
   z-index: 1;
+  overflow-y:hidden;
 }
 main .box{
   position: absolute;
@@ -44,25 +60,25 @@ main .box{
   top: 25px;
   width: 80%;
   height: 90%;
-  background-color: #F7B267;
-  opacity: 0.25;
+  background-color: #333533;
   z-index: -1;
 }
 
-.bast{
+.best{
+  position:relative;
   margin-top: 50px;
+  width: 100%;
 }
 
-.bast h2{
+.best h2{
   position: relative;
   text-align: right;
   font-size: 6.5vw;
   color: #fff;
   padding: 10px;
   z-index: 1;
-
 }
-.bast h2::before{
+.best h2::before{
   position: absolute;
   content: '';
   top: 20px;
@@ -73,20 +89,33 @@ main .box{
   z-index: -1;
 }
 
-.bast ul{
+.best ul{
   position: relative;
   margin-top: 20px;
-  width: 100%;
-  height: 34vh;
+  display:flex;
+  flex-wrap:nowrap;
+  overflow:hidden;
+  user-select:none;
 }
-.bast ul li .tap{
+.best ul li{
+  width:100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left:0px;
+  flex-shrink: 0;
+  transition: left 0.35s;
+}
+
+.best ul li .tap{
   position: relative;
   display: flex;
   width: 100%;
-  height: 34vh;
+  height: 100vw;
   overflow: hidden;
 }
-.bast ul li .tap::before{
+.best ul li .tap::before{
   position: absolute;
   content: '';
   left: 0;
@@ -103,48 +132,44 @@ main .box{
 );
 }
 
-.bast ul li a{
-  width: 70%;
-  position: relative;
-  overflow: hidden;
-  color: #fff;
-  margin: 0 auto;
-}
-
-.bast ul li .tap h3{
+.best ul li .tap h3{
   position: absolute;
   width: 100%;
-  top: 40%;
+  height:8vw;
+  top: 30%;
   color: #fff;
-  font-size: 5.3vw;
+  font-size: 7vw;
   text-align: center;
   left: 50%;
   transform: translateX(-50%);
-  padding: 3px;
+  padding:5px;
+  overflow:visible;
 }
-.bast ul li .tap h3::before{
+
+.best ul li .tap h3::before{
   position: absolute;
   content: '';
   left: 50%;
-  bottom: 0%;
+  top:100%;
   transform: translateX(-50%);
-  width: 50%;
+  width: 10vw;
   height: 1px;
   background-color: #fff;
 }
 
-.bast ul li .tap-sb{
+.best ul li .tap-sb{
   position: absolute;
   width: 100%;
-  top: 50%;
+  top: 43%;
   left: 50%;
   transform: translateX(-50%);
   font-size: 4vw;
   font-weight: 300;
   text-align: center;
+  color: #fff;
 }
 
-.bast ul li .txt-box{
+.best ul li .txt-box{
   position: absolute;
   top: 60%;
   width: 100%;
@@ -153,30 +178,29 @@ main .box{
   text-align: center;
   margin: auto;
   z-index: 100;
-  padding: 15px;
   color: #fff;
 }
-.bast ul li .txt-box::before{
+.best ul li .txt-box p{padding: 5vw;}
+.best ul li .txt-box::before{
   position: absolute;
   content: '';
-  width: 90%;
-  height: 80%;
-  top: 15px;
-  left: 20px;
+  width: 95%;
+  height: 90%;
+  bottom: 0;
+  right: 0;
   background-color: #fff;
   opacity: 0.15;
 }
-.bast ul li .txt-box::after{
+.best ul li .txt-box::after{
   position: absolute;
   content: '';
-  width: 90%;
-  height:85%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  width: 95%;
+  height:90%;
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
   border: 0.5px solid #fff;
 }
-
 
 .box1{
   background:url(../image/sub-teb-01.jpg) no-repeat center bottom;
@@ -207,13 +231,36 @@ main .box{
 	background-size:cover;
 }
 
-.date{
-  width: 100%;
-  border: 1px solid #000;
-  margin-top: 50px;
-  margin: auto;
+.slide_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  cursor: pointer;
 }
-
+.slide_prev_button {
+  left: 10px;
+}
+.slide_next_button {
+  right: 10px;
+}
+.slide_button img{width:30px;}
+.date{
+  position: relative;
+  width: 100%;
+  margin: 50px auto;
+}
+.date::before{
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 88%;
+  top: 115vw;
+  left: 50%;
+  background-color: #fff;
+}
 
 .date h5{
   position: relative;
@@ -221,7 +268,7 @@ main .box{
   color: #fff;
   text-align: center;
   padding: 20px;
-  margin: auto;
+  margin: 150px auto;
 }
 .date h5::before{
   position: absolute;
@@ -248,7 +295,7 @@ main .box{
   width: 100%;
   font-size: 7vw;
   margin: auto;
-  padding: 30px 10px;
+  padding: 50px 10px;
   text-align: center;
   color: #fff;
 }
@@ -265,13 +312,15 @@ main .box{
   transform: translate(-50%,-50%);
 }
 
+
 .date ul{
   width: 100%;
 
 }
 .year{display: flex;}
 .year ul{
-  padding: 10px 0;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 .year ul li{
@@ -279,8 +328,9 @@ main .box{
   color: #fff;
   font-weight: 200;
   font-size: 3.5vw;
-  padding: 5px 0;
+  line-height: 5.5vw;
+  box-sizing: border-box;
+  padding-bottom: 1vw;
 }
-.date ul li:nth-child(even){
-  text-align: right;
-}
+
+.txt-right li{text-align: right;}

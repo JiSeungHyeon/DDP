@@ -40,6 +40,12 @@ $(document).ready(function () {
     $(this).siblings().find(".lnb").slideUp(300);
     $(this).find(".lnb").stop().slideToggle(200);
   });
+  $("lnb li").click(function(){
+    $("nav").removeClass("active");
+  });
+  $("gnb li:nth-of-type(3)").click(function(){
+    $("nav").removeClass("active");
+  });
 
 });
 

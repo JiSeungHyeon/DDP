@@ -1,42 +1,37 @@
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
-@charset "utf-8";
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-/* font-family: Pretendard, sans-serif;*/
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-/* font-family: 'Abril Fatface', cursive; */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap');
-/* font-family: 'Cormorant', serif; */
-@font-face {
-  font-family: 'Cafe24ClassicType-Regular';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Cafe24ClassicType-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
+html{scroll-behavior:smooth;}
+nav{background-color:#007AEB;}
+.vote{
+  background-color:#fff;
+  border:1px solid #007AEB;
 }
-
+nav li{
+  list-style-type: none;
+  color: #fff;
+}
 *, *:after, *:before{
   box-sizing:border-box;
   margin:0;
   padding:0;
 }
+
 body{
   font-family: Pretendard, sans-serif;
   font-weight:700;
   overflow:hidden;
-  position:fixed;
-  left:0;
-  top:0;
   width:100%;
-  height:100%;
   -webkit-text-size-adjust:none;
 }
+
+nav li a{color: #fff;}
 #wrap{
-  min-width:320px;
+  position:relative;
   width:100%;
-  max-width:767px;
   height: 100vh;
   background-color: #007AEB;
-  overflow-y: scroll;
+  overflow-x: hidden;
 }
+.trigger{background-color:#fff;}
+.back span{color:#fff;}
 .poster img{
   margin-top: 3rem;
   width: 100vw;
@@ -63,7 +58,14 @@ body{
   margin: 7vh 0;
   font-size: 4vw;
   line-height: 5vw;
-
+}
+@keyframes ani04 {
+  0%{transform: translateX(-100vw);}
+  100%{transform: translateX(0vw);}
+}
+@keyframes ani05 {
+  0%{transform: translateX(150vw);}
+  100%{transform: translateX(0vw);}
 }
 .one{
   width: 100vw;
@@ -71,6 +73,7 @@ body{
   position: relative;
   padding: 0.3rem;
   z-index: 10;
+  animation: ani04 0.5s linear;
 }
 .one::before{
   content: '';
@@ -90,11 +93,13 @@ body{
   left: -5vw;
   z-index: 10;
   text-align: right;
+  animation: ani05 0.6s linear;
 }
 .two::before{
   content: '';
   position: absolute;
-  top: 0vh;
+  top:50%;
+  transform:translateY(-50%);
   left: 25vw;
   width: 90vw;
   height: 10vh;
@@ -106,9 +111,9 @@ body{
   height: 2vh;
   position: relative;
   z-index: 10;
-
   padding: 2vw;
   box-sizing: border-box;
+  animation: ani04 0.7s linear;
 }
 .three::before{
   content: '';
@@ -129,6 +134,7 @@ body{
   z-index: 10;
   padding: 1vh;
   text-align: right;
+  animation: ani05 0.8s linear;
 }
 .four::before{
   content: '';
@@ -148,6 +154,7 @@ body{
   width: 100vw;
   height: 10vh;
   background: url(../image/Ellipse\ 14.svg)no-repeat;
+  z-index: -1;
 }
 .five{
   width: 100vw;
@@ -156,7 +163,7 @@ body{
   z-index: 10;
   padding: 0.3rem;
   line-height: 1.5rem;
-  opacity: 0;
+  animation: ani04 0.9s linear;
 }
 .five::before{
   content: '';
@@ -177,16 +184,16 @@ body{
   height: 15vh;
   background: url(../image/Polygon\ 2.svg)no-repeat;
   background-size: contain;
-
   z-index: -1;
 }
 .six{
   width: 100vw;
-  height: 3vh;
+  height: 5vh;
   position: relative;
   z-index: 10;
   text-align: right;
   padding: 0.8rem;
+  animation: ani05 1s linear;
 }
 .six::before{
   content: '';
@@ -204,6 +211,7 @@ body{
   position: relative;
   z-index: 10;
   padding: 0.8rem;
+  animation: ani04 1.1s linear;
 }
 .seven::before{
   content: '';
@@ -234,7 +242,6 @@ body{
   transition:0.75s;
 }
 .five.scr5{
-  opacity: 1;
   transition:0.75s;
 }
 .six.scr6{
@@ -247,14 +254,16 @@ body{
 }
 
 footer{
-  padding-top: 5vh;
+  padding:7vh 0;
+  margin-bottom:8vh;
   overflow: hidden;
-  height: 400px;
+  height:350px;
+  font-weight:500;
 }
 address{
   text-align: left;
   position: relative;
-  font-size: 0.8rem;
+  font-size:3vw;
   padding: 5% 0 0 5%;
   color: #fff;
   margin: 10%;
@@ -262,13 +271,16 @@ address{
 address:before{
   content: '';
   position: absolute;
-  top: -7vh;
+  top: -6vh;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height:80vh;
   background: url(../image/footerbg.svg)no-repeat;
   background-size: contain;
 }
 footer p{
   font-style: normal;
 }
+
+#tap_bar{bottom:0px;}
+#top{bottom:8vh;}
